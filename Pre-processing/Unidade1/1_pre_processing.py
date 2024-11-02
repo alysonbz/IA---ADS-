@@ -16,7 +16,7 @@ print("Elementos que faltam no DATASET")
 print(volunteer.isna().sum())
 
 # Exclua as colunas Latitude e Longitude de volunteer
-print(" Excluindo Colunas Longitude e Latitude")
+print("Excluindo Colunas Longitude e Latitude")
 volunteer_cols = volunteer.drop(columns=["Latitude", "Longitude"], axis=1)
 
 
