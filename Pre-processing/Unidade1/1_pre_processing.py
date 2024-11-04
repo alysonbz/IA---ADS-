@@ -18,6 +18,6 @@ volunteer_cols =
 volunteer_subset =
 
 # Print o shape do subset
-
+print(volunteer_subset.shape)
 
 
