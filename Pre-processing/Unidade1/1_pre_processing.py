@@ -13,17 +13,18 @@ print(volunteer.info())
 
 #mostre quantos elementos do dataset estão faltando na coluna
 print("Elementos que faltam no DATASET")
-print(volunteer.isna().sum())
+print(volunteer['locality'].isnull().sum())
 
 # Exclua as colunas Latitude e Longitude de volunteer
 print("Excluindo Colunas Longitude e Latitude")
 volunteer_cols = volunteer.drop(columns=["Latitude", "Longitude"], axis=1)
+#resposta em sala, (sem columns) c
+#volunteer_cols = volunteer.drop(["Latitude", "Longitude"], axis=1)
 
 
 # Exclua as linhas com valores null da coluna category_desc de volunteer_cols
 
 volunteer_subset = volunteer_cols.dropna(subset=["category_desc"], axis=0)
-
 
 
 # Print o shape do subset
