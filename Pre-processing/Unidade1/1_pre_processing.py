@@ -20,11 +20,10 @@ print(volunteer.isna().sum())
 volunteer_cols = volunteer.columns.drop("Latitude", "Longitude")
 print(volunteer_cols)
 
-
 # Exclua as linhas com valores null da coluna category_desc de volunteer_cols
 volunteer_subset = volunteer_cols.dropna()
 
 # Print o shape do subset
-print(volunteer_subset.shape())
+print(volunteer_subset.shape)
 
 
