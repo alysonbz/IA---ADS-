@@ -8,7 +8,7 @@ print(volunteer.shape)
 #mostre os tipos de dados existentes no dataset
 print(volunteer.info())
 #mostre quantos elementos do dataset estão faltando na coluna
-print(volunteer['locality'].isnull.sum())
+print(volunteer['locality'].isnull().sum())
 # Exclua as colunas Latitude e Longitude de volunteer
 volunteer_cols = volunteer.drop(['Latitude', 'Longitude'],axis=1)
 

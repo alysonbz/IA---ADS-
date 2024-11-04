@@ -3,13 +3,14 @@ from src.utils import load_volunteer_dataset
 volunteer = load_volunteer_dataset()
 
 # Print os primeiros elementos da coluna hits
-___
+print(volunteer.head())
 
 # Print as caracteristicas da coluna hits
-__
+print(volunteer.info)
 
 # Converta a coluna hits para o tipo int
-___
+
+volunteer_new = volunteer.astype("int64")
 
 # Print as caracteristicas da coluna hits novamente
----
+print(volunteer_new.info)
