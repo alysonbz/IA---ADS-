@@ -13,13 +13,14 @@ volunteer = volunteer_new.dropna(subset="category_desc")
 print(volunteer['category_desc'].value_counts(),'\n','\n')
 
 # Crie um DataFrame com todas as colunas, com exceção de ``category_desc``
-X = volunteer.__(__, axis=1)
+X = volunteer.drop("category_desc", axis=1)
 
 # Crie um dataframe de labels com a coluna category_desc
-y = __[['__']]
+y = volunteer[['category_desc']]
 
 # # Utiliza a a amostragem stratificada para separar o dataset em treino e teste
-X_train, X_test, y_train, y_test = __(__, __, stratify=__, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
 
 # mostre o balanceamento das classes em 'category_desc' novamente
-___
+print(y_test["category_desc"].value_counts())
+print(y_train["category_desc"].value_counts())
