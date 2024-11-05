@@ -13,8 +13,8 @@ print(volunteer.dtypes)
 print("--------------------")
 
 #mostre quantos elementos do dataset estão faltando na coluna
-print("Quantidade de dados faltando em cada coluna")
-print(volunteer.isna().sum())
+print("Quantidade de dados faltando na coluna locality")
+print(volunteer['locality'].isna().sum())
 print("--------------------")
 
 # Exclua as colunas Latitude e Longitude de volunteer
