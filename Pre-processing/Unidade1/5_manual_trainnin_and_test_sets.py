@@ -1,7 +1,7 @@
 from src.utils import load_volunteer_dataset
 
 volunteer = load_volunteer_dataset()
-
+'''
 def train_test_split(X,y,test_size,random_seed=1):
     #SEU CÓDIGO AQUI
     return X_train,X_test, y_train, y_test
@@ -28,3 +28,4 @@ X_train, X_test, y_train, y_test = train_test_split(X,y,test_size,random_seed=1)
 
 # mostre o balanceamento das classes em 'category_desc' novamente
 ___
+'''
