@@ -18,7 +18,7 @@ X = volunteer.drop('category_desc', axis=1)
 # Crie um dataframe de labels com a coluna category_desc
 y = volunteer[['category_desc']]
 
-# # Utiliza a a amostragem stratificada para separar o dataset em treino e teste
+# # Utiliza a amostragem stratificada para separar o dataset em treino e teste
 X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
 
 # mostre o balanceamento das classes em 'category_desc' novamente

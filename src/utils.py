@@ -19,7 +19,6 @@ def load_hiking_dataset():
 def load_df1_unidade1():
     return pd.read_csv('../dataset/df1_unidade1.csv')
 
-
 def load_df2_unidade1():
     return pd.read_csv('../dataset/df2_unidade1.csv')
 
