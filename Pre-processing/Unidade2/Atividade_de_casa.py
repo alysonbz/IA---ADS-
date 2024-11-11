@@ -1,10 +1,13 @@
 import math
 
 lista = []
-with open('iris_data.csv', 'r') as f:
+with open('../dataset/iris.data', 'r') as f:
     for linha in f.readlines():
         a = linha.replace('\n', '').split(',')
         lista.append(a)
+
+print(lista)
+print(lista[2][4])
 
 
 def countclasses(lista):
@@ -12,12 +15,19 @@ def countclasses(lista):
     versicolor = 0
     virginica = 0
     for i in range(len(lista)):
-        if lista[i][4] == 1.0:
-            setosa += 1
-        if lista[i][4] == 2.0:
-            versicolor += 1
-        if lista[i][4] == 3.0:
-            virginica += 1
+        if len(lista[i]) > 3:
+            if lista[i][4] == "Iris-setosa":
+                setosa += 1
+
+            if lista[i][4] == "Iris-versicolor":
+                versicolor += 1
+
+            if lista[i][4] == "Iris-virginica":
+                virginica += 1
+
+            print(setosa)
+            print(versicolor)
+            print(virginica)
 
     return [setosa, versicolor, virginica]
 
