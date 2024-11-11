@@ -4,30 +4,32 @@ lista = []
 with open('../dataset/iris.data', 'r') as f:
     for linha in f.readlines():
         a = linha.replace('\n', '').split(',')
-        lista.append(a)
+        if a[4] == "Iris-setosa":
+            a[4] = 1.0
+        if a[4] == "Iris-versicolor":
+            a[4] = 2.0
+        if a[4] == "Iris-virginica":
+            a[4] = 3.0
+
+        valor = [float(num) for num in a]
+        lista.append(valor)
 
 print(lista)
-print(lista[2][4])
-
 
 def countclasses(lista):
     setosa = 0
     versicolor = 0
     virginica = 0
     for i in range(len(lista)):
-        if len(lista[i]) > 3:
-            if lista[i][4] == "Iris-setosa":
-                setosa += 1
+        #if len(lista[i]) > 3:
+        if lista[i][4] == 1.0:
+            setosa += 1
 
-            if lista[i][4] == "Iris-versicolor":
-                versicolor += 1
+        if lista[i][4] == 2.0:
+            versicolor += 1
 
-            if lista[i][4] == "Iris-virginica":
-                virginica += 1
-
-            print(setosa)
-            print(versicolor)
-            print(virginica)
+        if lista[i][4] == 3.0:
+            virginica += 1
 
     return [setosa, versicolor, virginica]
 

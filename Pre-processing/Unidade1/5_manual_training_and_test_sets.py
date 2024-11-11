@@ -4,11 +4,9 @@ from collections import Counter
 
 volunteer = load_volunteer_dataset()
 
-def train_test_split(df, cl_alvo, ):
-    X = df.drop(cl_alvo, axis=1)
-    y = df[[cl_alvo]]
+def train_test_split(X, y,train_size ):
 
-    msk = np.random.rand(len(df)) < 0.8
+    msk = np.random.rand(len(X)) < train_size
     X_train = X[msk]
     X_test = X[~msk]
     y_train = y[msk]
@@ -32,7 +30,7 @@ X = volunteer.drop('category_desc', axis=1)
 y = volunteer[['category_desc']]
 
 # # Utiliza a amostragem stratificada para separar o dataset em treino e teste
-X_train, X_test, y_train, y_test = train_test_split(volunteer, 'category_desc')
+X_train, X_test, y_train, y_test = train_test_split(X, y, 0.8)
 
 # mostre o balanceamento das classes em 'category_desc' novamente
 print(y_train.value_counts(), '\n')
