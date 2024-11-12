@@ -1,25 +1,31 @@
+import random
 import numpy as np
 import pandas as pd
 from src.utils import load_volunteer_dataset
 
 volunteer = load_volunteer_dataset()
-Y_COLUMN = "category_desc"
-def train_test_split(X, y, test_size=0.2, random_seed=1):
-    # Converte y para DataFrame, se necessário
-    if isinstance(y, np.ndarray):
-        y = pd.DataFrame(y, columns=[Y_COLUMN])
 
-    data = pd.concat([X, y], axis=1)
-    # Embaralha os dados
-    data = data.sample(frac=1, random_state=random_seed)
-    X = data.drop(Y_COLUMN, axis=1)
-    y = data[[Y_COLUMN]]  # Transforma y em uma série para que seja 1D
-    # Implementação manual do split
+def train_test_split(X, y, test_size=0.2, random_seed=1):
+    # Set the random seed for reproducibility
+    random.seed(random_seed)
+
+    # Generate random indices
+    indices = random.sample(range(len(X)), len(X))
+    print("Randomized Indices:", indices)
+
+    # Reorder X and y using the randomized indices
+    data_X = X.iloc[indices].reset_index(drop=True)
+    data_y = y.iloc[indices].reset_index(drop=True)
+
+    # Calculate the split index
     split_index = int(len(X) * (1 - test_size))
-    X_train, X_test = X[:split_index], X[split_index:]
-    y_train, y_test = y[:split_index], y[split_index:]
+
+    # Split into training and testing sets
+    X_train, X_test = data_X[:split_index], data_X[split_index:]
+    y_train, y_test = data_y[:split_index], data_y[split_index:]
 
     return X_train, X_test, y_train, y_test
+
 
 # Exclua as colunas Latitude e Longitude de volunteer
 volunteer_new = volunteer.drop(["Latitude", "Longitude"], axis=1)
@@ -38,7 +44,7 @@ y = volunteer[['category_desc']]
 
 # # Utiliza a a amostragem stratificada para separar o dataset em treino e teste
 test_size = 0.2
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size, random_seed=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size, random_seed=40)
 
 # mostre o balanceamento das classes em 'category_desc' novamente
 print("Teste: ", y_test["category_desc"].value_counts())
