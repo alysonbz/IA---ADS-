@@ -1,4 +1,3 @@
-from ucimlrepo import fetch_ucirepo
 import math
 def dist_euclidiana(v1,v2):
     dim, soma = len(v1), 0
