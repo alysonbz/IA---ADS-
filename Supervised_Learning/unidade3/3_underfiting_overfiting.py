@@ -12,7 +12,7 @@ y = churn_df["churn"].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
 # Create neighbors
-neighbors = np.arange(1, 12)
+neighbors = np.arange(1, 15)
 train_accuracies = {}
 test_accuracies = {}
 
