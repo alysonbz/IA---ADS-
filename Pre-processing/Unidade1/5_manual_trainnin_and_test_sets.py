@@ -1,9 +1,19 @@
-from pandas import value_counts
+import numpy as np
 
 from src.utils import load_volunteer_dataset
-from sklearn.model_selection import train_test_split
 
 volunteer = load_volunteer_dataset()
+
+def train_test_split(X,y,test_size):
+    treino = np.random.rand(len(X)) < test_size
+
+    X_train = X[treino]
+    X_test = X[~treino]
+    y_train = y[treino]
+    y_test = y[~treino]
+
+    return X_train,X_test, y_train, y_test
+
 
 # Exclua as colunas Latitude e Longitude de volunteer
 volunteer_new = volunteer.drop(['Latitude', 'Longitude'], axis=1)
@@ -12,17 +22,18 @@ volunteer_new = volunteer.drop(['Latitude', 'Longitude'], axis=1)
 volunteer = volunteer_new.dropna(subset=["category_desc"])
 
 # mostre o balanceamento das classes em 'category_desc'
-print(volunteer['category_desc'].value_counts())
-#print(value_counts(['category_desc'].count(),True,False))
+print(volunteer['category_desc'].value_counts(),'\n','\n')
 
 # Crie um DataFrame com todas as colunas, com exceção de ``category_desc``
 X = volunteer.drop("category_desc", axis=1)
 
 # Crie um dataframe de labels com a coluna category_desc
-y = volunteer['category_desc'].values
+y = volunteer['category_desc']
 
 # # Utiliza a a amostragem stratificada para separar o dataset em treino e teste
-X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
+test_size = 0.8
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size)
 
 # mostre o balanceamento das classes em 'category_desc' novamente
-print(volunteer['category_desc'].value_counts())
+print(y_train.value_counts(), '\n')
+print(y_test.value_counts())

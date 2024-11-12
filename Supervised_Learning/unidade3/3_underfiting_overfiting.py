@@ -12,35 +12,35 @@ y = churn_df["churn"].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
 # Create neighbors
-neighbors = np.arange(____, ____)
+neighbors = np.arange(1, 12)
 train_accuracies = {}
 test_accuracies = {}
 
 for neighbor in neighbors:
     # Set up a KNN Classifier
-    knn = ____(____=____)
+    knn = KNeighborsClassifier(n_neighbors=neighbor)
 
     # Fit the model
-    knn.____(____, ____)
+    knn.fit(X_train, y_train)
 
     # Compute accuracy
-    train_accuracies[____] = knn.____(____, ____)
-    test_accuracies[____] = knn.____(____, ____)
+    train_accuracies[neighbor] = knn.score(X_train, y_train)
+    test_accuracies[neighbor] = knn.score(X_test, y_test)
 
 print("acuracy on train: ",train_accuracies, '\n',"acuracy on test: ", test_accuracies)
 
 # Add a title
-plt.title("____")
+plt.title("Plot da Accuracies do KNN")
 
-# Plot training accuracies
-plt.plot(____, ____, label="____")
+#Plot training accuracies
+plt.plot(neighbors, train_accuracies.values(), label="Training Accuracies")
 
 # Plot test accuracies
-plt.plot(____, ____, label="____")
+plt.plot(neighbors, test_accuracies.values(), label="Test Accuracies")
 
 plt.legend()
 plt.xlabel("Number of Neighbors")
 plt.ylabel("Accuracy")
 
 # Display the plot
-____
+plt.show()
