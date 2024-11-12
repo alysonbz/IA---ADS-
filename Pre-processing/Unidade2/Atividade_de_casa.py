@@ -2,11 +2,18 @@ import math
 
 lista=[]
 
-with open('iris_data.csv', 'r') as f:
+with open('../dataset/iris.data', 'r') as f:
     for linha in f.readlines():
         a=linha.replace('\n','').split(',')
-        lista.append(a)
+        if a[4] == "Iris-setosa":
+            a[4] = 1.0
+        if a[4] == "Iris-versicolor":
+            a[4] = 2.0
+        if a[4] == "Iris-virginica":
+            a[4] = 3.0
 
+        valor = [float(num) for num in a]
+        lista.append(valor)
 
 def countclasses(lista):
     setosa = 0
@@ -48,6 +55,8 @@ def dist_euclidiana(v1,v2):
         soma += math.pow(v1[i] -v2[i],2)
     return math.sqrt(soma)
 
+def dist_manhattan(v1,v2):
+    return sum(abs(val1 - val2) for val1, val2 in zip(v1, v2))
 
 def knn(treinamento, nova_amostra, K):
     dists, len_treino = {}, len(treinamento)
