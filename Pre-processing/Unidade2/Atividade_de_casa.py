@@ -5,6 +5,24 @@ def dist_euclidiana(v1,v2):
         soma += math.pow(v1[i] -v2[i],2)
     return math.sqrt(soma)
 
+def dist_manhattan(v1, v2):
+    dim, soma = len(v1), 0
+    for i in range(dim - 1):
+        soma += abs(v1[i] - v2[i])
+    return soma
+
+def dist_minkowski(v1, v2, p):
+    dim, soma = len(v1), 0
+    for i in range(dim - 1):
+        soma += math.pow(abs(v1[i] - v2[i]), p)
+    return math.pow(soma, 1 / p)
+
+def dist_chebyshev(v1, v2):
+    dim, max_dist = len(v1), 0
+    for i in range(dim - 1):
+        max_dist = max(max_dist, abs(v1[i] - v2[i]))
+    return max_dist
+
 lista = []
 with open('../dataset/iris.data', 'r') as f:
     for linha in f.readlines():
@@ -56,11 +74,11 @@ for lis in lista:
         teste.append(lis)
 
 
-def knn(treinamento, nova_amostra, K):
+def knn(treinamento, nova_amostra, K, distancia):
     dists, len_treino = {}, len(treinamento)
 
     for i in range(len_treino):
-        d = dist_euclidiana(treinamento[i], nova_amostra)
+        d = distancia(treinamento[i], nova_amostra)
         dists[i] = d
 
     k_vizinhos = sorted(dists, key=dists.get)[:K]
@@ -78,7 +96,7 @@ def knn(treinamento, nova_amostra, K):
 
 acertos, K = 0, 1
 for amostra in teste:
-    classe = knn(treinamento, amostra, K)
+    classe = knn(treinamento, amostra, K, dist_chebyshev)
     if amostra[-1]==classe:
         acertos +=1
 print("Porcentagem de acertos:",100*acertos/len(teste))
