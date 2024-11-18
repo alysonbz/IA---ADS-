@@ -1,17 +1,18 @@
-
 from src.utils import processing_sales_clean
-# Import matplotlib.pyplot
-import ____.____ as ____
+# Importar o pyplot da biblioteca matplotlib
+import matplotlib.pyplot as plt
 
-X,y,predictions = processing_sales_clean()
+# Carregar dados e previsões
+X, y, predictions = processing_sales_clean()
 
-# Create scatter plot
-plt.scatter(____, ____, color="____")
+# Criar um gráfico scatter utilizando X e y, com a cor azul
+plt.scatter(X, y, color="blue")
 
-# Create line plot
-plt.plot(____, ____, color="____")
+# Criar um gráfico de linha utilizando X e predictions, com a cor vermelha
+plt.plot(X, predictions, color="red")
 plt.xlabel("Radio Expenditure ($)")
 plt.ylabel("Sales ($)")
 
-# Display the plot
-plt.____()
+
+# Mostrar o gráfico
+plt.show()
