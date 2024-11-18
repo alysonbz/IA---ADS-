@@ -1,15 +1,28 @@
+import random
 from src.utils import load_volunteer_dataset
 import numpy as np
 volunteer = load_volunteer_dataset()
 
-def train_test_split(df, cl_alvo):
-    X = df.drop(cl_alvo, axis=1)
-    y = df[[cl_alvo]]
+def train_test_split(X, y, test_size=0.2, random_seed=1):
+    # Set the random seed for reproducibility
+    random.seed(random_seed)
 
-    msk = np.random.rand(len(df)) < 0.8
+    # Generate random indices
+    indices = random.sample(range(len(X)), len(X))
+    print("Randomized Indices:", indices)
 
-    return X_train[X[msk]], X_test[X[~msk]], y_train[y[msk]], y_test[y[~msk]]
+    # Reorder X and y using the randomized indices
+    data_X = X.iloc[indices].reset_index(drop=True)
+    data_y = y.iloc[indices].reset_index(drop=True)
 
+    # Calculate the split index
+    split_index = int(len(X) * (1 - test_size))
+
+    # Split into training and testing sets
+    X_train, X_test = data_X[:split_index], data_X[split_index:]
+    y_train, y_test = data_y[:split_index], data_y[split_index:]
+
+    return X_train, X_test, y_train, y_test
 
 # Exclua as colunas Latitude e Longitude de volunteer
 volunteer_new = volunteer.drop(["Longitude","Latitude"], axis=1)
