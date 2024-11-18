@@ -19,6 +19,8 @@ with open(data_path, 'r') as f:
         lista.append(valor)
 
 pd.DataFrame(lista).info()
+
+
 def countclasses(lista):
     setosa = 0
     versicolor = 0
@@ -63,11 +65,32 @@ def dist_euclidiana(v1, v2):
     return math.sqrt(soma)
 
 
-def knn(treinamento, nova_amostra, K):
+def dist_manhattan(v1, v2):
+    dim, soma = len(v1), 0
+    for i in range(dim - 1):  # Exclude the class label
+        soma += abs(v1[i] - v2[i])
+    return soma
+
+
+def dist_minkowski(v1, v2, p):
+    dim, soma = len(v1), 0
+    for i in range(dim - 1):  # Exclude class label
+        soma += math.pow(abs(v1[i] - v2[i]), p)
+    return math.pow(soma, 1 / p)
+
+
+def dist_chebyshev(v1, v2):
+    dim, max_dif = len(v1), 0
+    for i in range(dim - 1):  # Exclude class label
+        max_diff = max(max_dif, abs(v1[i] - v2[i]))
+    return max_dif
+
+
+def knn(treinamento, nova_amostra, K, dist_func):
     dists, len_treino = {}, len(treinamento)
 
     for i in range(len_treino):
-        d = dist_euclidiana(treinamento[i], nova_amostra)
+        d = dist_func(treinamento[i], nova_amostra)  # Use the selected distance function
         dists[i] = d
 
     k_vizinhos = sorted(dists, key=dists.get)[:K]
@@ -86,9 +109,34 @@ def knn(treinamento, nova_amostra, K):
     return a.index(max(a)) + 1.0
 
 
-acertos, K = 0, 1
+print("Distância Euclidiana:")
+acertos = 0
 for amostra in teste:
-    classe = knn(treinamento, amostra, K)
+    classe = knn(treinamento, amostra, K=3, dist_func=dist_euclidiana)
+    if amostra[-1] == classe:
+        acertos += 1
+print("Porcentagem de acertos:", 100 * acertos / len(teste))
+
+print("Distância de Manhattan:")
+acertos = 0
+for amostra in teste:
+    classe = knn(treinamento, amostra, K=3, dist_func=dist_manhattan)
+    if amostra[-1] == classe:
+        acertos += 1
+print("Porcentagem de acertos:", 100 * acertos / len(teste))
+
+print("Distância de Minkowski com p=3:")
+acertos = 0
+for amostra in teste:
+    classe = knn(treinamento, amostra, K=3, dist_func=lambda v1, v2: dist_minkowski(v1, v2, p=3))
+    if amostra[-1] == classe:
+        acertos += 1
+print("Porcentagem de acertos:", 100 * acertos / len(teste))
+
+print("Distância de Chebyshev:")
+acertos = 0
+for amostra in teste:
+    classe = knn(treinamento, amostra, K=3, dist_func=dist_chebyshev)
     if amostra[-1] == classe:
         acertos += 1
 print("Porcentagem de acertos:", 100 * acertos / len(teste))
