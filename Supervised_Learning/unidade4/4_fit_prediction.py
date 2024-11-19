@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 sales_df = load_sales_clean_dataset()
 
 # Import mean_squared_error
-from sklearn.model_selection import mean_squared_error
+from sklearn.metrics import mean_squared_error
 
 # Create X and y arrays
 X = sales_df.drop(["sales","influencer" ],axis=1)
