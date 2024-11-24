@@ -1,0 +1,34 @@
+Index: Pre-processing/Unidade1/1_pre_processing.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from src.utils import load_volunteer_dataset\r\n\r\nvolunteer = load_volunteer_dataset()\r\n\r\n# Mostre a dimensão do dataset volunteer\r\nprint(___)\r\n\r\n#mostre os tipos de dados existentes no dataset\r\n___\r\n\r\n#mostre quantos elementos do dataset estão faltando na coluna\r\n---\r\n\r\n# Exclua as colunas Latitude e Longitude de volunteer\r\nvolunteer_cols =\r\n\r\n# Exclua as linhas com valores null da coluna category_desc de volunteer_cols\r\nvolunteer_subset =\r\n\r\n# Print o shape do subset\r\n___\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Pre-processing/Unidade1/1_pre_processing.py b/Pre-processing/Unidade1/1_pre_processing.py
+--- a/Pre-processing/Unidade1/1_pre_processing.py	(revision 1d5446b6eea8c06e27083bba0f85564bc8a3897f)
++++ b/Pre-processing/Unidade1/1_pre_processing.py	(date 1731334178758)
+@@ -6,18 +6,18 @@
+ print(___)
+ 
+ #mostre os tipos de dados existentes no dataset
+-___
++#___
+ 
+ #mostre quantos elementos do dataset estão faltando na coluna
+----
++#---
+ 
+ # Exclua as colunas Latitude e Longitude de volunteer
+-volunteer_cols =
++#volunteer_cols =
+ 
+ # Exclua as linhas com valores null da coluna category_desc de volunteer_cols
+-volunteer_subset =
++#volunteer_subset =
+ 
+ # Print o shape do subset
+-___
++#___
+ 
+ 

@@ -1,0 +1,23 @@
+Index: Pre-processing/Unidade1/4_drop_nan.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from src.utils import load_volunteer_dataset\r\n\r\nvolunteer = load_volunteer_dataset()\r\n\r\n## realize print do dataset volunteer corrigido sem nenhum NAN, para isto removam as colunas NAN e depois as linhas e crie\r\n#um dataframe novo e print este mostrando a contagem de colunas NAN existentes e mostre também o shape novo.
+===================================================================
+diff --git a/Pre-processing/Unidade1/4_drop_nan.py b/Pre-processing/Unidade1/4_drop_nan.py
+--- a/Pre-processing/Unidade1/4_drop_nan.py	(revision 4f5d16364da80cec8cede24d7dedf27cb3409cef)
++++ b/Pre-processing/Unidade1/4_drop_nan.py	(date 1731334611672)
+@@ -2,5 +2,10 @@
+ 
+ volunteer = load_volunteer_dataset()
+ 
+-## realize print do dataset volunteer corrigido sem nenhum NAN, para isto removam as colunas NAN e depois as linhas e crie
+-#um dataframe novo e print este mostrando a contagem de colunas NAN existentes e mostre também o shape novo.
+\ No newline at end of file
++#realize print do dataset volunteer corrigido sem nenhum NAN, Remova as colunas NAN e depois as linhas e crie um novo dataframe
++print(volunteer.info())
++#Vol_Coluns = volunteer.drop(["amsl","is_priority ","amsl_unit"], axis=1)
++
++#Vol_Lines = volunteer.dropna()
++
++#print(Vol_Lines)
+\ No newline at end of file
