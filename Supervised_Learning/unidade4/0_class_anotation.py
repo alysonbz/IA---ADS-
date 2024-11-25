@@ -1,5 +1,5 @@
 from src.utils import load_diabetes_clean_dataset
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LinearRegression
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -18,7 +18,7 @@ X_bmi = X_bmi.reshape(-1, 1)
 
 print(X_bmi.shape)
 
-reg = LogisticRegression()
+reg = LinearRegression()
 reg.fit(X_bmi, y)
 predictions = reg.predict(X_bmi)
 plt.scatter(X_bmi, y)
