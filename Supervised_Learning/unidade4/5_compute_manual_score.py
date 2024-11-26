@@ -2,16 +2,18 @@ import numpy as np
 from src.utils import processing_all_features_sales_clean
 
 def compute_RSS(predictions,y):
-    RSS = None
+    RSS = np.sum((predictions-y)**2)
     return RSS
 def compute_MSE(predictions,y):
-    MSE= None
+    MSE = np.mean((y - predictions) ** 2)
     return MSE
 def compute_RMSE(predictions,y):
-    RMSE = None
+    RMSE = np.sqrt(compute_MSE(predictions, y))
     return RMSE
 def compute_R_squared(predictions,y):
-    r_squared = None
+    total_variance = np.sum((y - np.mean(y)) ** 2)
+    residual_variance = compute_RSS(predictions, y)
+    r_squared = 1 - (residual_variance / total_variance)
     return r_squared
 
 
