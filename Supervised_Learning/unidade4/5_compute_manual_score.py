@@ -19,9 +19,7 @@ def compute_RMSE(predictions, y):
 
 
 def compute_R_squared(predictions, y):
-    total_variance = np.sum(np.square(y - np.mean(y)))
-    residual_variance = compute_RSS(predictions, y)
-    r_squared = 1 - (residual_variance / total_variance)
+    r_squared = (compute_RSS(predictions, np.mean(y)) / compute_RSS(y, np.mean(y)))
     return r_squared
 
 
