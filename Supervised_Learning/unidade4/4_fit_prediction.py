@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 sales_df = load_sales_clean_dataset()
 
 # Import mean_squared_error
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import root_mean_squared_error
 
 # Create X and y arrays
 X = sales_df.drop(["sales","influencer" ],axis=1)
@@ -19,15 +19,15 @@ reg = LinearRegression()
 reg.fit(X, y)
 
 # Make predictions
-y_pred = reg.predict(X)
+y_pred = reg.predict(X_test)
 print("Predictions: {}, Actual Values: {}".format(y_pred[:2], y_test[:2]))
 
 # Compute R-squared
-r_squared = reg.(____, ____)
+r_squared = reg.score(X_test, y_test)
 
 # Compute RMSE
-rmse = ____(____, ____, squared=____)
+rmse = root_mean_squared_error(y_test, y_pred)
 
 # Print the metrics
-print("R^2: {}".format(____))
-print("RMSE: {}".format(____))
+print("R^2: {}".format(r_squared))
+print("RMSE: {}".format(rmse))

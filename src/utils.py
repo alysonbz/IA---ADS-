@@ -59,9 +59,8 @@ def processing_all_features_sales_clean():
     sales_df = load_sales_clean_dataset()
     X = sales_df.drop(["sales", "influencer"], axis=1)
     y = sales_df["sales"].values
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
     reg = LinearRegression()
-    reg.fit(X_test, y_test)
+    reg.fit(X, y)
     predictions = reg.predict(X)
     return X, y, predictions
 
