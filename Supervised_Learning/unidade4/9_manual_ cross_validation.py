@@ -2,25 +2,53 @@ import numpy as np
 from src.utils import load_sales_clean_dataset
 from sklearn.linear_model import LinearRegression
 
+def compute_RSS(predictions, y):
+    RSS = np.sum(np.square(y - predictions))
+    return RSS
+
+def compute_R_squared(predictions, y):
+    r_squared = (compute_RSS(predictions, np.mean(y)) / compute_RSS(y, np.mean(y)))
+    return r_squared
 
 class KFold:
 
    def __init__(self,n_splits):
 
-       self.n_splits = n_splits
+        self.n_splits = n_splits
 
-   def _compute_score(self,X,y):
-       return None
+   def _compute_score(self,y_true,y_pred):
+        r_squared = (compute_RSS(y_pred, np.mean(y_true)) / compute_RSS(y_true, np.mean(y_true)))
+        return r_squared
 
-   def cross_val_score(self,obj,X, y):
+   def cross_val_score(self,model,X, y):
 
         scores = []
 
         # parte 1: dividir o dataset X em n_splits vezes
+        n_samples = X.shape[0]
+        indices = np.arange(n_samples)
+        np.random.shuffle(indices)
+        fold_size = n_samples // self.n_splits
+        scores = []
 
-        # parte 2: Calcular a métrica score para subset dividida na parte 1. Chamar a função _compute_score para cada subset
+        for i in range(self.n_splits):
+            # criar subsets para cada fold
+            test_indices = indices[i * fold_size:(i + 1) * fold_size]
+            train_indices = np.setdiff1d(indices, test_indices)
 
-        #appendar na lista scores cada valor obtido na parte 2
+            # criar train e test sets
+            X_train, X_test = X[train_indices], X[test_indices]
+            y_train, y_test = y[train_indices], y[test_indices]
+
+            model.fit(X_train, y_train)
+
+            # Make predictions on the test set
+            y_pred = model.predict(X_test)
+
+            # parte 2: Calcular a métrica score para subset dividida na parte 1. Chamar a função _compute_score para cada subset
+            score = self._compute_score(y_test, y_pred)
+            # appendar na lista scores cada valor obtido na parte 2
+            scores.append(float(score))
 
         #parte 3 - retornar a lista de scores
 
