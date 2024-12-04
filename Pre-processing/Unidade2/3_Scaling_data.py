@@ -6,7 +6,6 @@ from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 import numpy as np
 
-
 wine = load_wine_dataset()
 
 # Inicializer o scale

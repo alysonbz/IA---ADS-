@@ -4,7 +4,21 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LinearRegression , LogisticRegression
 from sklearn.model_selection import train_test_split
 
+#PROVA
+def load_gender_classification():
+    return pd.read_csv('dataset/gender_classification_v7.csv')
 
+def load_kc_house_data():
+    return pd.read_csv('dataset/kc_house_data.csv')
+
+def load_new_dataframe_kc_house():
+    return load_kc_house_data().drop(['long', 'lat', 'zipcode', 'date', 'id'], axis=1)
+
+def load_new_dataframe_gender_classification():
+    data = load_gender_classification()
+    data["gender"] = data["gender"].map({'Male':1 ,'Female':0})
+    return data
+#/PROVA
 
 def load_volunteer_dataset():
     return pd.read_csv('../dataset/opportunities.csv')

@@ -1,4 +1,3 @@
-import numpy
 import numpy as np
 from src.utils import processing_all_features_sales_clean
 
