@@ -1,13 +1,15 @@
-import pandas as pd
+from AV1.src.utils import load_water_quality_old, load_water_quality
 
-def load_water_quality():
-    return pd.read_csv("../AV1/dataset/water_quality.csv")
-
-waterQuality = load_water_quality()
+waterQuality = load_water_quality_old()
+newWaterQuality = load_water_quality()
 
 print(waterQuality.shape)
 print(waterQuality.isna().sum())
+print(waterQuality.dtypes)
 print(waterQuality)
+print(newWaterQuality.isna().sum())
+print(newWaterQuality.dtypes)
+print(newWaterQuality)
 
 '''
 aluminium - perigoso se for maior que 2.8
