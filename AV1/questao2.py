@@ -1,7 +1,6 @@
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from collections import Counter
-import pandas as pd
 import numpy as np
 from AV1.questao1 import load_water_quality
 
