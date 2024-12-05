@@ -81,7 +81,7 @@ ROBERT MICHAEL DE AVILA BARREIRA:
 
 classificação: https://www.kaggle.com/datasets/yasserh/wine-quality-dataset
 
-regressão: https://www.kaggle.com/datasets/prasertk/average-screen-time-and-usage-by-country
+regressão: https://www.kaggle.com/datasets/franciscogcc/financial-data
 
 SUZIANE BRANDAO ANDRADE:
 
