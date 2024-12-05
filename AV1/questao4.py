@@ -1,15 +1,20 @@
 from src.utils import load_new_dataframe_gender_classification
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 import numpy as np
 import matplotlib.pyplot as plt
 
+scaler = StandardScaler()
 gender_df = load_new_dataframe_gender_classification()
+
 X = gender_df[['long_hair', 'forehead_width_cm', 'forehead_height_cm', 'nose_wide', 'nose_long', 'lips_thin', 'distance_nose_to_lip_long']].values
 y = gender_df["gender"].values
 
+X_norm = scaler.fit_transform(X)
+
 # Split into training and test sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42, stratify=y)
+X_train, X_test, y_train, y_test = train_test_split(X_norm, y, test_size=0.25, random_state=42, stratify=y)
 
 # Create neighbors
 neighbors = np.arange(1, 15)

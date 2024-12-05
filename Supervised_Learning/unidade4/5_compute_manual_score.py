@@ -1,8 +1,10 @@
 import numpy as np
 from src.utils import processing_all_features_sales_clean
 
-def compute_RSS(predictions,y):
-    RSS = np.square(y-predictions)
+
+def compute_RSS(predictions, y):
+    # Diferenças quadráticas somadas
+    RSS = np.sum(np.square(y - predictions))
     return RSS
 def compute_MSE(predictions,y):
     RSS = compute_RSS(predictions, y)
@@ -12,10 +14,10 @@ def compute_RMSE(predictions,y):
     MSE = compute_MSE(predictions, y)
     RMSE = np.sqrt(MSE)
     return RMSE
-def compute_R_squared(predictions,y):
-    var_pred = np.sum(np.square(y-np.mean(y)))
-    var_data = compute_RSS(predictions, y)
-    r_squared = np.divide(var_pred, var_data)
+def compute_R_squared(predictions, y):
+    ss_total = np.sum(np.square(y - np.mean(y)))  # Soma dos quadrados totais
+    ss_residual = compute_RSS(predictions, y)    # Soma dos quadrados residuais
+    r_squared = 1 - (ss_residual / ss_total)     # Fórmula do R^2
     return r_squared
 
 

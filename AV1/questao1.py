@@ -1,6 +1,4 @@
 import pandas as pd
-from pandas import isnull
-
 
 def load_gender_classification():
     return pd.read_csv('dataset/gender_classification_v7.csv')
@@ -23,11 +21,14 @@ newDataRegressao = load_new_dataframe_kc_house()
 newDataClassification = load_new_dataframe_gender_classification()
 
 #Printes verificando se tem NA ou null, Não tem.
-#print(dataRegressao.isna().sum(),'\n'), print(dataclassification.isna().sum(),'\n'), print(dataRegressao.isnull().sum(),'\n'), print(dataclassification.isnull().sum(),'\n')
+print("Verificando se tem NA no dataset de regressão: ",dataRegressao.isna().sum(),'\n')
+print("Verificando se tem NA no dataset de classificação: ",dataclassification.isna().sum(),'\n')
+print("Verificando se tem Null no dataset de regressão: ",dataRegressao.isnull().sum(),'\n')
+print("Verificando se tem Null no dataset de classificação: ",dataclassification.isnull().sum(),'\n')
 
 #prints para verificar os tipos dos arquivos, Percebi que no gender_classification, Gender era objeto então transformei
-    #em numerico em que 1 é masculino e 0 é feminino.
-#print(dataclassification.dtypes), print(dataRegressao.dtypes)
+#em numerico em que 1 é masculino e 0 é feminino.
+print("Tipose de Dados do dataset de classificação: ",dataclassification.dtypes), print("Tipo de Dados do dataset de Regressão: ", dataRegressao.dtypes)
 
 #print para verificar se ta tudo certo
-print(newDataClassification.dtypes), print(newDataRegressao.value_counts())
+print("Dataset classificação depois das mudanças: ",newDataClassification.dtypes), print("Dataset Regressão depois das mudanças: ",newDataRegressao.value_counts())

@@ -2,19 +2,17 @@ import numpy as np
 from src.utils import load_sales_clean_dataset
 from sklearn.linear_model import LinearRegression
 
-
 class KFold:
 
    def __init__(self,n_splits):
 
        self.n_splits = n_splits
 
-   def _compute_score(self,X,y):
-       return None
+   def _compute_score(self,obj,X,y):
+       obj.fit(X[0], y[0])
+       return obj.score(X[1], y[1])
 
    def cross_val_score(self,obj,X, y):
-
-        scores = []
 
         # parte 1: dividir o dataset X em n_splits vezes
 
@@ -23,6 +21,22 @@ class KFold:
         #appendar na lista scores cada valor obtido na parte 2
 
         #parte 3 - retornar a lista de scores
+
+        scores = []
+        n_samples = len(X)
+        fold_size = n_samples // self.n_splits
+
+        for i in range(self.n_splits):
+            start = i * fold_size
+            end = start + fold_size if i < self.n_splits - 1 else n_samples
+
+            X_test = X[start:end]
+            y_test = y[start:end]
+            X_train = np.concatenate([X[:start], X[end:]])
+            y_train = np.concatenate([y[:start], y[end:]])
+
+            score = self._compute_score(obj, (X_train, X_test), (y_train, y_test))
+            scores.append(score)
 
         return scores
 

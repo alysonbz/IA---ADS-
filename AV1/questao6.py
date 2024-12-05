@@ -6,7 +6,6 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 house_df = load_new_dataframe_kc_house()
 
-
 # Create X and y arrays
 X = house_df["sqft_living"].values.reshape(-1,1)
 y = house_df["price"].values
@@ -41,8 +40,7 @@ mse = mean_squared_error(y, y_pred)
 rmse = np.sqrt(mse)
 
 # Print the metrics
-print("R^2: {}".format(r_squared))
-print("RMSE: {}".format(rmse))
-print("MSE: {}".format(mse))
 print("RSS: {}".format(rss))
-
+print("MSE: {}".format(mse))
+print("RMSE: {}".format(rmse))
+print("R^2: {}".format(r_squared))
