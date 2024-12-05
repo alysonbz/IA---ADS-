@@ -19,9 +19,7 @@ Nesta questão você vai realizar uma classificação com KNN sem executar norma
    
 2)  Execute o treinamento do classifcador knn. Este já foi iniccalizado para você com a linha  `` knn = KNeighborsClassifier() ``. Agora você deve chamar a função ``fit`` e colocar como argumentos ``X_train`` e ``y_train``. 
 
-3)  Print a quantidade de elementos que estão faltando na coluna `` locality``.
-    
-4)  Execute a função ``score`` de ``knn`` para medir a acurácia do classidicador. 
+3)  Execute a função ``score`` de ``knn`` para medir a acurácia do classidicador. 
 
 ### Questão 2
 
