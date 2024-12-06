@@ -1,10 +1,10 @@
 import numpy as np
 from collections import Counter
 from sklearn.metrics import accuracy_score
-from src.utils import load_new_dataframe_gender_classification
+from src.utils import load_gender_classification
 from sklearn.model_selection import train_test_split
 
-genderClassification_df = load_new_dataframe_gender_classification()
+genderClassification_df = load_gender_classification()
 
 #PS: Esse Codigo esta demorando muito para executar. Entao porfavor tenha paciencia.
 
@@ -45,11 +45,11 @@ def evaluate_knn(X_train, y_train, X_test, y_test, k, distance_func, cov_inv=Non
     y_pred = knn_manual(X_train, y_train, X_test, k, distance_func, cov_inv)
     return accuracy_score(y_test, y_pred)
 
-X = genderClassification_df[['long_hair', 'forehead_width_cm', 'forehead_height_cm', 'nose_wide', 'nose_long', 'lips_thin', 'distance_nose_to_lip_long']].values
-
+X = genderClassification_df[['long_hair', 'forehead_width_cm', 'forehead_height_cm',
+                             'nose_wide', 'nose_long', 'lips_thin', 'distance_nose_to_lip_long']].values
 y = genderClassification_df['gender'].values
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=30)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=30)
 
 # Avaliando diferentes métricas de distância
 results = {}

@@ -22,7 +22,7 @@ houses = houses.drop(['sqft_lot', 'sqft_lot15', 'yr_built', 'condition'], axis=1
 sns.scatterplot(x='sqft_living', y='price', data=houses)
 plt.show()
 
-#LASSO: Esta demorando muito para criar o grafico. provavelmente pq tem muitas colunas.
+#LASSO: As vezes este grafico demora muito para criar o grafico. provavelmente pq tem muitas colunas.
 sales_columns = X.columns
 
 # Instantiate a lasso regression model

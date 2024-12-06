@@ -28,7 +28,9 @@ print("Verificando se tem Null no dataset de classificação: ",dataclassificati
 
 #prints para verificar os tipos dos arquivos, Percebi que no gender_classification, Gender era objeto então transformei
 #em numerico em que 1 é masculino e 0 é feminino.
-print("Tipose de Dados do dataset de classificação: ",dataclassification.dtypes), print("Tipo de Dados do dataset de Regressão: ", dataRegressao.dtypes)
+print("Tipos de Dados do dataset de classificação: ",dataclassification.dtypes)
+print("Tipos de Dados do dataset de Regressão: ", dataRegressao.dtypes)
 
 #print para verificar se ta tudo certo
-print("Dataset classificação depois das mudanças: ",newDataClassification.dtypes), print("Dataset Regressão depois das mudanças: ",newDataRegressao.value_counts())
+print("Dataset classificação depois das mudanças: ",newDataClassification.dtypes)
+print("Dataset Regressão depois das mudanças: ",newDataRegressao.value_counts())

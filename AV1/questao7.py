@@ -28,11 +28,11 @@ class KFold:
 
        self.n_splits = n_splits
 
-   def _compute_score(self,obj,X,y):
-       obj.fit(X[0], y[0])
-       return obj.score(X[1], y[1])
+   def _compute_score(self, reg, X, y):
+       reg.fit(X[0], y[0])
+       return reg.score(X[1], y[1])
 
-   def cross_val_score(self,obj,X, y):
+   def cross_val_score(self, reg, X, y):
         scores = []
         n_samples = len(X)
         fold_size = n_samples // self.n_splits
@@ -46,7 +46,7 @@ class KFold:
             X_train = np.concatenate([X[:start], X[end:]])
             y_train = np.concatenate([y[:start], y[end:]])
 
-            score = self._compute_score(obj, (X_train, X_test), (y_train, y_test))
+            score = self._compute_score(reg, (X_train, X_test), (y_train, y_test))
             scores.append(score)
 
         return scores

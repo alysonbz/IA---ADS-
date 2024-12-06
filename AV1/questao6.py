@@ -6,19 +6,15 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 house_df = load_new_dataframe_kc_house()
 
-# Create X and y arrays
 X = house_df["sqft_living"].values.reshape(-1,1)
 y = house_df["price"].values
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=47)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=47)
 
-# Instantiate the model
 reg = LinearRegression()
 
-# Fit the model to the data
 reg.fit(X,y)
 
-# Make predictions
 y_pred = reg.predict(X)
 
 plt.scatter(X,y)
