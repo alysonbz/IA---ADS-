@@ -13,24 +13,19 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_sta
 treinamento = np.hstack((X_train, y_train.reshape(-1, 1)))
 teste = np.hstack((X_test, y_test.reshape(-1, 1)))
 
-
 def dist_euclidiana(v1, v2):
     return math.sqrt(sum((v1[i] - v2[i]) ** 2 for i in range(len(v1))))
-
 
 def dist_manhattan(v1, v2):
     return sum(abs(v1[i] - v2[i]) for i in range(len(v1)))
 
-
 def dist_chebyshev(v1, v2):
     return max(abs(v1[i] - v2[i]) for i in range(len(v1)))
-
 
 def dist_mahalanobis(v1, v2, matriz_cov):
     delta = np.array(v1) - np.array(v2)
     inv_cov = np.linalg.inv(matriz_cov)
     return np.sqrt(np.dot(np.dot(delta.T, inv_cov), delta))
-
 
 def knn(treinamento, nova_amostra, K, distancia_func, matriz_cov=None):
     dists = {}
@@ -49,7 +44,6 @@ def knn(treinamento, nova_amostra, K, distancia_func, matriz_cov=None):
 
     return 1.0 if qtd_safe > qtd_unsafe else 0.0
 
-
 def avaliar_knn(teste, treinamento, K, distancia_func, matriz_cov=None):
     acertos = 0
     for amostra in teste:
@@ -57,7 +51,6 @@ def avaliar_knn(teste, treinamento, K, distancia_func, matriz_cov=None):
         if amostra[-1] == classe:
             acertos += 1
     return 100 * acertos / len(teste)
-
 
 matriz_cov = np.cov(X_train.T)
 

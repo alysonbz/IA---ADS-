@@ -1,0 +1,12 @@
+Category{
+Cabriolet = 1
+Coupe = 2
+Goods wagon = 3
+Hatchback = 4
+Jeep = 5
+Limousine = 6
+Microbus = 7
+Minivan = 8
+Pickup = 9
+Sedan = 10
+Universal = 11}
