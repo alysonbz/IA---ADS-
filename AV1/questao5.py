@@ -7,12 +7,6 @@ from AV1.src.utils import load_car_price_prediction
 # Carregar o dataset
 carPrice = load_car_price_prediction()
 
-carPrice = carPrice.drop(['ID','Doors','Levy', 'Model', 'Wheel', 'Color'], axis=1)
-carPrice['Engine volume'] = carPrice['Engine volume'].str.replace('Turbo','')
-carPrice['Engine volume'] = pd.to_numeric(carPrice['Engine volume'])
-carPrice['Mileage'] = carPrice['Mileage'].str.split(" ",expand=True)[0]
-carPrice['Mileage'] = pd.to_numeric(carPrice['Mileage'])
-
 # Exibir uma visão geral do dataset
 print("Primeiras linhas do dataset:")
 print(carPrice.head())
