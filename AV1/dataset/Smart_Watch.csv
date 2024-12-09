@@ -1,0 +1,380 @@
+﻿Brand,Model,Operating System,Connectivity,Display Type,Display Size (inches),Resolution,Water Resistance (meters),Battery Life (days),Heart Rate Monitor,GPS,NFC,Price (USD)
+Apple,Watch Series 7,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.9,396 x 484,50,18,Yes,Yes,Yes,$399 
+Samsung,Galaxy Watch 4,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.4,450 x 450,50,40,Yes,Yes,Yes,$249 
+Garmin,Venu 2,Garmin OS,"Bluetooth, Wi-Fi",AMOLED,1.3,416 x 416,50,11,Yes,Yes,No,$399 
+Fitbit,Versa 3,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$229 
+Fossil,Gen 6,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.28,416 x 416,30,24,Yes,Yes,Yes,$299 
+Huawei,Watch 3 Pro,HarmonyOS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.43,466 x 466,50,14,Yes,Yes,Yes,$499 
+TicWatch,E3,Wear OS,"Bluetooth, Wi-Fi, Cellular",IPS LCD,1.3,360 x 360,50,2,Yes,Yes,Yes,$199 
+Oppo,Watch 2,ColorOS,"Bluetooth, Wi-Fi",AMOLED,1.75,372 x 430,50,4,Yes,Yes,Yes,$199 
+Amazfit,GTR 3,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,12,Yes,Yes,Yes,$199 
+Skagen,Jorn Hybrid HR,N/A,Bluetooth,N/A,N/A,N/A,30,14,Yes,No,No,$195 
+Withings,ScanWatch,Withings OS,Bluetooth,AMOLED,1.65,240 x 240,50,30,Yes,Yes,Yes,$279 
+Timex,Metropolitan R,N/A,Bluetooth,AMOLED,1.2,390 x 390,30,3,Yes,No,No,$179 
+Suunto,7,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,2,Yes,Yes,Yes,$499 
+Mobvoi,TicWatch Pro 3 GPS,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,45,Yes,Yes,Yes,$299 
+Polar,Ignite 2,Polar OS,"Bluetooth, Wi-Fi",TFT LCD,1.2,240 x 240,30,5,Yes,Yes,Yes,$229 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$299 
+Garmin,Forerunner 945 LTE,Garmin OS,"Bluetooth, Wi-Fi, Cellular",Memory-in-pixel (MIP),1.2,240 x 240,50,10,Yes,Yes,Yes,$649 
+Apple,Watch SE,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.57,394 x 324,50,18,Yes,Yes,Yes,$279 
+Samsung,Galaxy Watch 3,Tizen OS,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.4,360 x 360,50,3,Yes,Yes,Yes,$349 
+Garmin,Venu Sq Music,Garmin OS,"Bluetooth, Wi-Fi",LCD,1.3,240 x 240,50,6,Yes,Yes,Yes,$249 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$329 
+Fossil,Collider,Hybrid OS,"Bluetooth, Wi-Fi",Analog,N/A,N/A,30,14,Yes,No,Yes,$195 
+Huawei,Watch GT 2 Pro,Lite OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$299 
+Amazfit,GTR 2,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$179 
+TicWatch,Pro 3 GPS,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,3,Yes,Yes,Yes,$299 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,416 x 416,30,24,Yes,Yes,Yes,$295 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",LCD,1.3,360 x 360,30,3,Yes,Yes,Yes,$199 
+Garmin,Lily,Garmin OS,"Bluetooth, Wi-Fi",LCD,1,240 x 201,50,5,Yes,Yes,Yes,$199 
+Apple,Watch SE,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.78,368 x 448,50,18,Yes,Yes,Yes,$279 
+Samsung,Galaxy Watch 3,Tizen,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.4,360 x 360,50,4,Yes,Yes,Yes,$399 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,50,14,Yes,Yes,Yes,$599 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$299 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,24,Yes,Yes,Yes,$255 
+Huawei,Watch GT2 Pro,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$299 
+Amazfit,GTR 2e,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,24,Yes,Yes,Yes,$139 
+Ticwatch,Pro 4G/LTE,Wear OS,"Bluetooth, Wi-Fi, Cellular",OLED,1.39,400 x 400,50,48,Yes,Yes,Yes,$299 
+Polar,Vantage V2,Polar OS,"Bluetooth, Wi-Fi",Gorilla Glass,1.2,240 x 240,100,7,Yes,Yes,Yes,$499 
+Xiaomi,Mi Watch,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,16,Yes,Yes,Yes,$179 
+Suunto,9 Peak,Suunto OS,"Bluetooth, Wi-Fi",Transflective,1.4,360 x 360,100,14,Yes,Yes,Yes,$499 
+Apple,Watch SE,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.57,324 x 394,50,18,Yes,Yes,Yes,$279 
+Samsung,Galaxy Watch Active 2,Tizen OS,"Bluetooth, Wi-Fi",Super AMOLED,1.4,360 x 360,50,2,Yes,Yes,Yes,$249 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,50,14,Yes,Yes,Yes,$599 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$329 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,24,Yes,Yes,Yes,$149 
+Huawei,Watch GT2 Pro,HarmonyOS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$299 
+TicWatch,Pro 4G/LTE,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.4,400 x 400,50,2,Yes,Yes,Yes,$299 
+Suunto,7,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,2,Yes,Yes,Yes,$479 
+Amazfit,GTR 2e,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,No,Yes,$139 
+Polar,Vantage M,Polar OS,"Bluetooth, Wi-Fi",TFT LCD,1.2,240 x 240,50,30,Yes,Yes,No,$279 
+Xiaomi,Mi Watch Lite,Proprietary OS,"Bluetooth, Wi-Fi",TFT LCD,1.4,320 x 320,50,9,Yes,Yes,Yes,$59 
+Samsung,Galaxy Watch 3,Tizen,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.4,360 x 360,50,3,Yes,Yes,Yes,$399 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi",MIP,1.2,240 x 240,50,14,Yes,Yes,Yes,$599 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$329 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,24,Yes,Yes,Yes,$219 
+Huawei,Watch GT 2 Pro,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$299 
+Xiaomi,Mi Watch Revolve,Proprietary,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$149 
+TicWatch,Pro 3 GPS,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,3,Yes,Yes,Yes,$299 
+Amazfit,GTR 2e,Proprietary,"Bluetooth, Wi-Fi",AMOLED,1.65,348 x 442,50,45,Yes,Yes,No,$139 
+Honor,MagicWatch 2,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$139 
+Suunto,9 Baro,Suunto OS,"Bluetooth, Wi-Fi",MIP,1.2,240 x 240,100,14,Yes,Yes,No,$599 
+Samsung,Galaxy Watch Active2,Tizen,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.4,360 x 360,50,2,Yes,Yes,Yes,$249 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,50,2,Yes,Yes,Yes,$599 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$299 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,2,Yes,Yes,Yes,$275 
+Huawei,Watch GT 2 Pro,Lite OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$329 
+Xiaomi,Mi Watch Revolve,Proprietary OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$129 
+Amazfit,GTR 2e,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$139 
+TicWatch,Pro 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,3,Yes,Yes,Yes,$299 
+Oppo,Watch 2,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.91,402 x 476,50,16,Yes,Yes,Yes,$299 
+Polar,Vantage M2,Polar OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,100,5,Yes,Yes,No,$299 
+Xiaomi,Mi Watch Revolve,Proprietary,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$119 
+TicWatch,Pro 3,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.4,454 x 454,50,45,Yes,Yes,Yes,$299 
+Oppo,Watch 2,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.75,372 x 430,50,16,Yes,Yes,Yes,$329 
+Honor,Watch GS Pro,LiteOS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.39,454 x 454,50,25,Yes,Yes,No,$249 
+Suunto,7,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.39,454 x 454,50,2,Yes,Yes,Yes,$499 
+LG,Watch Urbane 2nd Ed.,Android Wear,"Bluetooth, Wi-Fi, Cellular",P-OLED,1.38,480 x 480,1.5,2,Yes,Yes,Yes,$399 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,416 x 416,30,24,Yes,Yes,Yes,$295 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi, Cellular",IPS LCD,1.3,360 x 360,1.5,3,Yes,Yes,No,$199 
+Polar,Vantage V2,Proprietary,"Bluetooth, Wi-Fi",transflective,1.2,240 x 240,100,7,Yes,Yes,No,$499 
+Withings,ScanWatch,Proprietary,"Bluetooth, Wi-Fi",PMOLED,1.65,240 x 240,50,30,Yes,Yes,No,$279 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi",transflective,1.2,240 x 240,50,2,Yes,Yes,Yes,$599 
+Garmin,Venu Sq,Garmin OS,"Bluetooth, Wi-Fi",LCD,1.3,240 x 240,50,6,Yes,Yes,Yes,$199 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$329 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,30,24,Yes,Yes,Yes,$249 
+Huawei,Watch GT 2 Pro,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$299 
+Amazfit,GTS 2e,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.65,348 x 442,50,14,Yes,Yes,Yes,$139 
+TicWatch,Pro 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,30,72,Yes,Yes,Yes,$299 
+Xiaomi,Mi Watch,MIUI for Watch,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.39,454 x 454,50,16,Yes,Yes,Yes,$199 
+Oppo,Watch 2,ColorOS,"Bluetooth, Wi-Fi",AMOLED,1.75,372 x 430,50,16,Yes,Yes,Yes,$249 
+Honor,Watch GS Pro,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,25,Yes,Yes,Yes,$249 
+Samsung,Galaxy Watch 3,Tizen OS,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.4,360 x 360,50,3,Yes,Yes,Yes,$349 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,50,14,Yes,Yes,Yes,$599 
+Suunto,7,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,2,Yes,Yes,Yes,$399 
+Apple,Watch SE,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.78,368 x 448,50,18,Yes,Yes,Yes,$279 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$299 
+Mobvoi,TicWatch Pro 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,3,Yes,Yes,Yes,$299 
+Polar,Vantage V2,Polar OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,100,7,Yes,Yes,Yes,$499 
+Samsung,Galaxy Watch Active 2,Tizen OS,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.4,360 x 360,50,2,Yes,Yes,Yes,$249 
+Garmin,Lily,Garmin OS,"Bluetooth, Wi-Fi",TFT,1.3,240 x 240,50,5,Yes,Yes,No,$199 
+Amazfit,GTR 2e,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$139 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,24,Yes,Yes,Yes,$199 
+Apple,Watch SE,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.57,324 x 394,50,18,Yes,Yes,Yes,$279 
+Samsung,Galaxy Watch Active2,Tizen,"Bluetooth, Wi-Fi",Super AMOLED,1.4,360 x 360,50,3,Yes,Yes,Yes,$199 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi","Sunlight-visible, transflective memory-in-pixel (MIP)",1.2,240 x 240,50,14,Yes,Yes,Yes,$599 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$299 
+Huawei,Watch GT 2 Pro,LiteOS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$299 
+Amazfit,GTR 2,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$179 
+Ticwatch,Pro 4G/LTE,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.4,400 x 400,50,2,Yes,Yes,Yes,$299 
+Suunto,7,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,2,Yes,Yes,No,$499 
+Fossil,Hybrid HR,Custom OS,"Bluetooth, Wi-Fi",E-Ink,1.06,176 x 176,30,14,Yes,No,No,$199 
+Polar,Vantage M2,Polar OS,"Bluetooth, Wi-Fi",LCD,1.2,240 x 240,100,5,Yes,Yes,No,$299 
+Apple,Watch SE,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.78,368 x 448,50,18,Yes,Yes,Yes,$279 
+Samsung,Galaxy Watch Active2,Tizen OS,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.35,360 x 360,50,60,Yes,Yes,Yes,$249 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi","Sunlight-visible, transflective memory-in-pixel (MIP)",1.2,240 x 240,50,14,Yes,Yes,Yes,$599 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$299 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,24,Yes,Yes,Yes,$219 
+Huawei,Watch GT 2 Pro,LiteOS,"Bluetooth, Wi-Fi, GPS",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$299 
+Apple,Watch Series 6,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.78,368 x 448,50,18,Yes,Yes,Yes,$399 
+Samsung,Galaxy Watch 3,Tizen OS,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.4,360 x 360,50,56,Yes,Yes,Yes,$399 
+Garmin,Venu Sq,Garmin OS,"Bluetooth, Wi-Fi",LCD,1.3,240 x 240,50,6,Yes,Yes,Yes,$199 
+Fitbit,Versa Lite Edition,Fitbit OS,"Bluetooth, Wi-Fi",LCD,1.34,300 x 300,50,4,Yes,No,No,$159 
+Fossil,Hybrid HR,Custom OS,"Bluetooth, Wi-Fi",E-Ink,1.06,176 x 176,30,14,Yes,No,Yes,$199 
+,,,,,,,,,,,,
+Apple,Watch SE,watchOS,"Bluetooth, Wi-Fi, GPS",Retina,1.78,324 x 394,50,18,Yes,Yes,Yes,$279 
+Samsung,Galaxy Watch Active 2,Tizen OS,"Bluetooth, Wi-Fi, GPS",Super AMOLED,1.2,360 x 360,50,2,Yes,Yes,Yes,$199 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi, GPS",Transflective,1.2,240 x 240,50,14,Yes,Yes,Yes,$599 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi, GPS",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$329 
+Fossil,Hybrid HR,Fossil OS,Bluetooth,E-ink,1.06,200 x 200,30,14,Yes,No,No,$199 
+Huawei,Watch GT 2 Pro,Lite OS,"Bluetooth, Wi-Fi, GPS",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$299 
+Apple,Watch Series 6,watchOS,"Bluetooth, Wi-Fi, GPS",Retina,1.78,368 x 448,50,18,Yes,Yes,Yes,$399 
+Samsung,Galaxy Watch 3,Tizen OS,"Bluetooth, Wi-Fi, GPS",Super AMOLED,1.4,360 x 360,50,2,Yes,Yes,Yes,$399 
+Garmin,Enduro,Garmin OS,"Bluetooth, Wi-Fi, GPS",Sunlight-visible,1.4,280 x 280,100,70,Yes,Yes,Yes,$799 
+Fitbit,Versa 2,Fitbit OS,"Bluetooth, Wi-Fi, NFC",AMOLED,1.39,300 x 300,50,5,Yes,Yes,Yes,$199 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi, GPS",AMOLED,1.2,390 x 390,50,2,Yes,Yes,Yes,$219 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi","Sunlight-visible, transflective memory-in-pixel (MIP)",1.2,240 x 240,50,2,Yes,Yes,Yes,$599 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$299 
+Fossil,Collider HR,Fossil OS,"Bluetooth, Wi-Fi",OLED,0.9,128 x 128,30,14,Yes,Yes,Yes,$195 
+Huawei,Watch GT 2 Pro,LiteOS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$299 
+TicWatch,Pro 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,3,Yes,Yes,Yes,$299 
+Polar,Vantage V2,Polar OS,"Bluetooth, Wi-Fi",Color Touch,1.2,240 x 240,100,7,Yes,Yes,No,$499 
+Amazfit,GTR 2,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$179 
+Suunto,7,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,2,Yes,Yes,Yes,$499 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,416 x 416,30,24,Yes,Yes,Yes,$295 
+Samsung,Galaxy Watch Active2,Tizen OS,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.4,360 x 360,50,3,Yes,Yes,Yes,$249 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,50,14,Yes,Yes,Yes,$599 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$329 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,24,Yes,Yes,Yes,$199 
+Huawei,Watch GT 2 Pro,HarmonyOS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$299 
+Apple,Watch Series 6,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.78,368 x 448,50,18,Yes,Yes,Yes,$399 
+Samsung,Galaxy Watch3,Tizen OS,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.4,360 x 360,50,4,Yes,Yes,Yes,$399 
+Garmin,Fenix 6 Pro Solar,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.4,280 x 280,100,14,Yes,Yes,Yes,$849 
+Fitbit,Versa 2,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,300 x 300,50,5,Yes,No,Yes,$179 
+Fossil,Hybrid HR,Custom OS,Bluetooth,E-Ink,1.06,240 x 198,30,14,Yes,No,No,$199 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$299 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,24,Yes,Yes,Yes,$189 
+Huawei,Watch GT 2 Pro,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$299 
+Apple,Watch Series 6,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.78,368 x 448,50,18,Yes,Yes,Yes,$399 
+Samsung,Galaxy Watch 3,Tizen OS,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.2,360 x 360,50,4,Yes,Yes,Yes,$399 
+Garmin,Venu Sq,Garmin OS,"Bluetooth, Wi-Fi",LCD,1.3,240 x 240,50,6,Yes,Yes,Yes,$179 
+Fitbit,Charge 5,Fitbit OS,Bluetooth,AMOLED,1.04,240 x 240,50,7,Yes,No,Yes,$179 
+Fossil,Gen 5 Carlyle,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.28,416 x 416,30,24,Yes,Yes,Yes,$295 
+Xiaomi,Mi Watch,MIUI,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.39,454 x 454,50,16,Yes,Yes,Yes,$139 
+TicWatch,Pro 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,45,Yes,Yes,Yes,$299 
+Honor,Magic Watch 2,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$199 
+Amazfit,GTR 2,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$179 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,416 x 416,30,24,Yes,Yes,Yes,$295 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",IPS,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Oppo,Watch,ColorOS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.91,402 x 476,50,16,Yes,Yes,Yes,$229 
+Suunto,7,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,2,Yes,Yes,No,$399 
+Mobvoi,TicWatch Pro 2020,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,400 x 400,50,2,Yes,Yes,Yes,$299 
+Casio,Pro Trek WSD-F30,Wear OS,"Bluetooth, Wi-Fi",Dual Layer,1.2,390 x 390,50,1,Yes,Yes,Yes,$549 
+Suunto,9 Peak,Suunto OS,"Bluetooth, Wi-Fi",OLED,1.4,240 x 240,100,14,Yes,Yes,No,$569 
+Garmin,Forerunner 945,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,50,14,Yes,Yes,Yes,$599 
+Fitbit,Sense,Fitbit OS,"Bluetooth, Wi-Fi",AMOLED,1.58,336 x 336,50,6,Yes,Yes,Yes,$329 
+Fossil,Hybrid HR,Fossil OS,"Bluetooth, Wi-Fi",E-Ink,1.06,176 x 176,30,14,Yes,No,Yes,$199 
+Huawei,Watch Fit,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.64,280 x 456,50,10,Yes,No,Yes,$129 
+TicWatch,Pro 4G/LTE,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.4,400 x 400,50,2,Yes,Yes,Yes,$299 
+Amazfit,GTS 2,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.65,348 x 442,50,7,Yes,Yes,Yes,$179 
+OnePlus,Watch,RTOS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$159 
+Oppo,Watch 2,ColorOS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.75,372 x 430,50,16,Yes,Yes,Yes,$249 
+Polar,Vantage V2,Polar OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,100,7,Yes,Yes,No,$499 
+LG,Watch W7,Wear OS,"Bluetooth, Wi-Fi",LCD,1.2,360 x 360,50,2,Yes,Yes,No,$249 
+Misfit,Vapor X,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,328 x 328,50,2,Yes,Yes,Yes,$199 
+Mobvoi,TicWatch Pro 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,3,Yes,Yes,Yes,$299 
+Moto,Moto 360 (3rd Gen),Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,30,2,Yes,Yes,Yes,$299 
+MyKronoz,ZeTime Elite 2,MyKronoz OS,"Bluetooth, Wi-Fi",TFT LCD,1.3,360 x 360,50,5,Yes,No,Yes,$199 
+Nubia,Alpha,Nubia OS,"Bluetooth, Wi-Fi, Cellular",OLED,4.01,960 x 192,Not specified,48 hours,Yes,Yes,Yes,$449 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,416 x 416,30,1,Yes,Yes,Yes,$295 
+Sony,SmartWatch 3,Android Wear,"Bluetooth, Wi-Fi",Transflective,1.6,320 x 320,30,2,Yes,Yes,Yes,$299 
+TicWatch,E2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,400 x 400,50,2,Yes,Yes,Yes,$159 
+Xiaomi,Mi Watch Lite,Mi Wear OS,"Bluetooth, Wi-Fi",LCD,1.4,320 x 320,50,9,Yes,Yes,Yes,$49 
+Zepp,Z,Zepp OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,15,Yes,Yes,Yes,$349 
+TicWatch,E3,Wear OS,"Bluetooth, Wi-Fi",LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Huawei,Watch GT 2 Pro,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$299 
+Samsung,Galaxy Watch Active 2,Tizen OS,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.4,360 x 360,50,2,Yes,Yes,Yes,$279 
+Apple,Watch Series 6,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.78,368 x 448,50,18,Yes,Yes,Yes,$399 
+Fitbit,Ionic,Fitbit OS,"Bluetooth, Wi-Fi",LCD,1.42,348 x 250,50,5,Yes,Yes,Yes,$249 
+Fossil,Gen 5,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.28,416 x 416,30,24,Yes,Yes,Yes,$295 
+Garmin,Venu Sq,Garmin OS,"Bluetooth, Wi-Fi",LCD,1.3,240 x 240,50,6,Yes,Yes,Yes,$199 
+Mobvoi,TicWatch Pro 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,3,Yes,Yes,Yes,$299 
+Oppo,Watch Free,ColorOS,"Bluetooth, Wi-Fi",AMOLED,1.6,360 x 360,50,14,Yes,Yes,Yes,$199 
+Realme,Watch S Pro,Realme OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$179 
+Suunto,9 Peak,Suunto OS,"Bluetooth, Wi-Fi",Transflective,1.4,320 x 300,100,14,Yes,Yes,Yes,$569 
+Timex,Metropolitan R,Proprietary OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,30,5,Yes,Yes,No,$179 
+Matrix,PowerWatch 2,Matrix OS,"Bluetooth, Wi-Fi",LCD,1.2,360 x 360,200,Unlimited,Yes,Yes,Yes,$499 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",IPS LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,416 x 416,30,24,Yes,Yes,Yes,$295 
+Xiaomi,Mi Watch Lite,Proprietary OS,Bluetooth,TFT LCD,1.4,320 x 320,50,9,Yes,No,Yes,$69 
+Honor,MagicWatch 2,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$199 
+Withings,ScanWatch,Proprietary OS,"Bluetooth, Wi-Fi",PMOLED,1.3,240 x 240,50,30,Yes,Yes,Yes,$279 
+Kate Spade,Scallop 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,1,Yes,Yes,Yes,$295 
+Diesel,On Fadelite,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,2,Yes,Yes,Yes,$299 
+Amazfit,Bip U Pro,Amazfit OS,"Bluetooth, Wi-Fi",TFT LCD,1.43,320 x 302,50,9,Yes,No,Yes,$69 
+Honor,Watch ES,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.64,280 x 456,50,10,Yes,No,Yes,$99 
+Timex,Metropolitan R,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,3,Yes,Yes,No,$179 
+Michael Kors,Lexington 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.28,416 x 416,30,24,Yes,Yes,Yes,$299 
+Diesel,Fadelite,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,2,Yes,Yes,Yes,$249 
+LG,Watch W7,Wear OS,"Bluetooth, Wi-Fi",LCD,1.2,360 x 360,50,2,Yes,Yes,Yes,$249 
+TicWatch,E3,Wear OS,"Bluetooth, Wi-Fi",TFT-LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Mobvoi,TicWatch C2+,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,360 x 360,50,2,Yes,Yes,Yes,$209 
+Zeblaze,Thor 5 Pro,Android OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.6,400 x 400,50,5,Yes,Yes,Yes,$189 
+Kospet,Prime 2,Android OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,2.1,480 x 480,50,4,Yes,Yes,Yes,$269 
+Lemfo,Lem12 Pro,Android OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.6,400 x 400,50,3,Yes,Yes,Yes,$179 
+Amazfit,Stratos 3,Amazfit OS,"Bluetooth, Wi-Fi",Transflective,1.34,320 x 320,50,7,Yes,Yes,Yes,$199 
+Garmin,Enduro,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.4,280 x 280,100,70,Yes,Yes,Yes,$799 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",IPS LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Withings,Steel HR Sport,Proprietary,"Bluetooth, Wi-Fi",OLED,1.23,240 x 240,50,25,Yes,Yes,No,$199 
+Casio,G-Shock Move,Casio OS,"Bluetooth, Wi-Fi",LCD,1.2,360 x 360,200,2,Yes,Yes,Yes,$399 
+Amazfit,Bip S,Amazfit OS,"Bluetooth, Wi-Fi",Transflective,1.28,176 x 176,50,40,Yes,No,Yes,$69 
+Garmin,Lily,Garmin OS,"Bluetooth, Wi-Fi",TFT LCD,1,240 x 240,50,5,Yes,Yes,No,$199 
+Huawei,Watch GT 2e,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$139 
+LG,Watch Urbane 2,Wear OS,"Bluetooth, Wi-Fi, Cellular",P-OLED,1.38,480 x 480,50,2,Yes,Yes,Yes,$299 
+Suunto,9 Peak,Suunto OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,100,14,Yes,Yes,No,$699 
+Timex,Metropolitan R,Proprietary,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,12,Yes,No,Yes,$179 
+Polar,Ignite 2,Polar OS,"Bluetooth, Wi-Fi",IPS LCD,1.2,240 x 240,50,5,Yes,Yes,No,$229 
+Xiaomi,Mi Watch Revolve,Proprietary,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$129 
+Skagen,Jorn Hybrid HR,Skagen OS,"Bluetooth, Wi-Fi",E-Ink,1.2,240 x 240,30,14,Yes,No,No,$195 
+Xiaomi,Mi Watch Revolve,MIUI for Watch,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$120 
+Kate Spade,Scallop 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,30,1,Yes,Yes,Yes,$299 
+TAG Heuer,Connected Modular 45,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,400 x 400,50,25,Yes,Yes,Yes,"$1,500 "
+Misfit,Vapor X,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,2,Yes,Yes,Yes,$279 
+Michael Kors,Access Bradshaw 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.28,416 x 416,30,1,Yes,Yes,Yes,$349 
+Casio,G-Shock GBD-H1000,Casio OS,"Bluetooth, Wi-Fi",STN LCD,1.2,360 x 360,200,14,Yes,Yes,Yes,$399 
+Matrix,PowerWatch 2,Matrix OS,"Bluetooth, Wi-Fi",LCD,1.2,228 x 172,200,Unlimited,Yes,Yes,Yes,$499 
+Garmin,Instinct Solar,Garmin OS,"Bluetooth, Wi-Fi",Monochrome,0.9,128 x 128,100,24,Yes,Yes,Yes,$399 
+Timex,Metropolitan R,Timex OS,"Bluetooth, Wi-Fi",E-Ink,1.2,240 x 240,50,30,Yes,No,No,$179 
+Diesel,On Fadelite,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,2,Yes,Yes,Yes,$249 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",IPS LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Casio,G-Shock GBD-H1000,Casio OS,"Bluetooth, Wi-Fi",Transflective,1.2,360 x 360,200,14,Yes,Yes,No,$399 
+Amazfit,GTR 2,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$179 
+Honor,Watch ES,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.64,280 x 456,50,10,Yes,No,No,$99 
+Realme,Watch S Pro,Realme OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$149 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,416 x 416,30,24,Yes,Yes,Yes,$295 
+Zepp,Z,Zepp OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,15,Yes,Yes,Yes,$349 
+Diesel,On Fadelite,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,2,Yes,Yes,Yes,$275 
+Garmin,Enduro,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.4,280 x 280,100,70,Yes,Yes,Yes,$799 
+Suunto,9 Peak,Suunto OS,"Bluetooth, Wi-Fi",Transflective,1.4,280 x 280,100,14,Yes,Yes,Yes,$699 
+Fitbit,Ionic,Fitbit OS,"Bluetooth, Wi-Fi",LCD,1.42,348 x 250,50,5,Yes,Yes,Yes,$249 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,328 x 328,30,24,Yes,Yes,Yes,$295 
+Montblanc,Summit 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.28,390 x 390,50,1.5,Yes,Yes,Yes,$990 
+TAG Heuer,Connected Modular 45,Wear OS,"Bluetooth, Wi-Fi",OLED,1.39,400 x 400,50,25,Yes,Yes,Yes,"$1,650 "
+Asus,ZenWatch 3,Android Wear,"Bluetooth, Wi-Fi",AMOLED,1.39,400 x 400,50,1.5,Yes,Yes,No,$229 
+Mobvoi,TicWatch Pro,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,400 x 400,50,2,Yes,Yes,Yes,$279 
+Misfit,Vapor 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,360 x 360,30,1,Yes,Yes,Yes,$249 
+Withings,ScanWatch,Withings OS,"Bluetooth, Wi-Fi",PMOLED,1.38,348 x 442,50,30,Yes,Yes,Yes,$279 
+Michael Kors,Access Gen 5,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.28,416 x 416,30,1,Yes,Yes,Yes,$295 
+Diesel,On Fadelite,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,1.5,Yes,Yes,Yes,$295 
+Emporio Armani,Connected,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,1.5,Yes,Yes,Yes,$375 
+Zepp,Z,Zepp OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.39,454 x 454,50,15,Yes,Yes,Yes,$349 
+Xiaomi,Mi Watch Revolve,MIUI For Watch,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$99 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",IPS LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Honor,Watch GS Pro,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,25,Yes,Yes,Yes,$249 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,328 x 328,30,2,Yes,Yes,Yes,$295 
+Sony,SmartWatch 3,Android Wear,"Bluetooth, Wi-Fi",Transflective,1.6,320 x 320,30,2,Yes,Yes,Yes,$150 
+Casio,Pro Trek Smart WSD-F30,Wear OS,"Bluetooth, Wi-Fi",OLED,1.2,390 x 390,50,1,Yes,Yes,Yes,$549 
+Timex,Ironman R300 GPS,Timex OS,"Bluetooth, Wi-Fi",Memory LCD,1.1,160 x 160,100,20,Yes,Yes,No,$129 
+Withings,ScanWatch 38mm,Withings OS,"Bluetooth, Wi-Fi",PMOLED,1.3,240 x 240,50,30,Yes,No,Yes,$279 
+LG,Watch Urbane 2nd Edition,Android Wear,"Bluetooth, Wi-Fi, Cellular",P-OLED,1.38,480 x 480,10,2,Yes,Yes,Yes,$399 
+Polaroid,Cosmo,Android,"Bluetooth, Wi-Fi",TFT LCD,1.2,240 x 240,50,2,Yes,Yes,Yes,$249 
+MyKronoz,ZeTime,MyKronoz OS,"Bluetooth, Wi-Fi",TFT LCD,1.22,240 x 240,30,3,Yes,Yes,Yes,$199 
+Xiaomi,Mi Watch Revolve,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$99 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",IPS LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Honor,Watch GS Pro,Lite OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.39,454 x 454,50,25,Yes,Yes,Yes,$249 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",OLED,1.3,416 x 416,30,1,Yes,Yes,Yes,$295 
+Withings,ScanWatch,Withings OS,"Bluetooth, Wi-Fi",PMOLED,1.65,240 x 240,50,30,Yes,Yes,Yes,$279 
+Timex,Metropolitan+,Timex OS,Bluetooth,E-Ink,1.5,N/A,50,1,Yes,No,No,$79 
+Kospet,Optimus Pro,Android,"Bluetooth, Wi-Fi, Cellular",IPS LCD,1.39,454 x 454,30,3,Yes,Yes,Yes,$199 
+Zepp,Z,Zepp OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,15,Yes,Yes,Yes,$249 
+Realme,Watch S Pro,Proprietary OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,No,$139 
+Casio,Pro Trek WSD-F30,Wear OS,"Bluetooth, Wi-Fi",OLED,1.2,390 x 390,50,1.5,Yes,Yes,Yes,$549 
+Montblanc,Summit 2+,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.28,416 x 416,50,1,Yes,Yes,Yes,"$1,230 "
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",IPS LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Casio,G-Shock GBD-H1000,Casio OS,"Bluetooth, Wi-Fi",LCD,1.2,360 x 360,200,14,Yes,Yes,No,$399 
+Honor,MagicWatch 2,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$159 
+Xiaomi,Mi Watch Revolve,Proprietary,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$149 
+Polar,Ignite 2,Polar OS,"Bluetooth, Wi-Fi",IPS LCD,1.2,240 x 240,30,5,Yes,Yes,Yes,$229 
+Suunto,9 Peak,Suunto OS,"Bluetooth, Wi-Fi",Transflective,1.4,320 x 300,100,14,Yes,Yes,Yes,$699 
+Garmin,Instinct,Garmin OS,"Bluetooth, Wi-Fi",Monochrome,0.9,128 x 128,100,14,Yes,Yes,No,$299 
+Amazfit,T-Rex Pro,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.3,360 x 360,100,18,Yes,Yes,Yes,$179 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,24,Yes,Yes,Yes,$219 
+TicWatch,C2+,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,360 x 360,50,1.5,Yes,Yes,Yes,$209 
+Huawei,Watch GT 2,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$179 
+Michael Kors,Access Runway,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,1,Yes,Yes,Yes,$349 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",OLED,1.3,328 x 328,30,1,Yes,Yes,Yes,$295 
+Mobvoi,TicWatch E2,Wear OS,"Bluetooth, Wi-Fi",LCD,1.39,400 x 400,50,2,Yes,Yes,Yes,$159 
+TAG Heuer,Connected,Wear OS,"Bluetooth, Wi-Fi, Cellular",OLED,1.39,454 x 454,50,20,Yes,Yes,Yes,"$1,800 "
+Asus,ZenWatch 3,Android Wear,"Bluetooth, Wi-Fi",AMOLED,1.39,400 x 400,50,2,Yes,Yes,No,$229 
+Honor,MagicWatch 2,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$199 
+Xiaomi,Mi Watch,MIUI,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.78,368 x 448,50,16,Yes,Yes,Yes,$399 
+Polar,Ignite,Polar OS,"Bluetooth, Wi-Fi",IPS,1.2,240 x 240,30,5,Yes,Yes,Yes,$199 
+Garmin,Vivoactive 4,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.3,260 x 260,50,8,Yes,Yes,Yes,$349 
+Misfit,Vapor X,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,2,Yes,Yes,Yes,$279 
+Mobvoi,TicWatch Pro 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,3,Yes,Yes,Yes,$299 
+Casio,Pro Trek F30,Wear OS,"Bluetooth, Wi-Fi",OLED,1.2,390 x 390,50,1.5,Yes,Yes,No,$549 
+Diesel,On Axial,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.28,328 x 328,30,24,Yes,Yes,Yes,$295 
+Emporio Armani,Smartwatch 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.28,328 x 328,30,24,Yes,Yes,Yes,$375 
+Misfit,Vapor 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,360 x 360,50,1,Yes,Yes,Yes,$249 
+Mobvoi,TicWatch C2+,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,360 x 360,50,1.5,Yes,Yes,Yes,$209 
+Motorola,Moto 360,Wear OS,"Bluetooth, Wi-Fi",OLED,1.2,390 x 390,30,1.5,Yes,Yes,Yes,$299 
+Nokia,Steel HR,Proprietary OS,"Bluetooth, Wi-Fi",OLED,1.36,160 x 160,50,25,Yes,No,Yes,$179 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,328 x 328,30,24,Yes,Yes,Yes,$295 
+Sony,SmartWatch 3,Android Wear,"Bluetooth, Wi-Fi",Transflective,1.6,320 x 320,30,2,Yes,Yes,No,$249 
+TAG Heuer,Connected Modular 45,Android Wear,"Bluetooth, Wi-Fi",OLED,1.39,400 x 400,50,25,Yes,Yes,Yes,"$1,200 "
+Montblanc,Summit 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,1.5,Yes,Yes,Yes,"$1,170 "
+Xiaomi,Mi Watch Revolve,Proprietary OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$129 
+Honor,Watch GS Pro,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,25,Yes,Yes,Yes,$249 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",IPS LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Zepp,Z Titanium,Proprietary OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,15,Yes,Yes,Yes,$349 
+LG,Watch W7,Wear OS,"Bluetooth, Wi-Fi",IPS LCD,1.2,360 x 360,50,2,Yes,Yes,Yes,$249 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",OLED,1.3,328 x 328,30,1,Yes,Yes,Yes,$295 
+Misfit,Vapor X,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,2,Yes,Yes,Yes,$199 
+Withings,ScanWatch,Withings OS,"Bluetooth, Wi-Fi",PMOLED,1.38,348 x 442,50,30,Yes,Yes,Yes,$279 
+Casio,Pro Trek Smart WSD-30F,Wear OS,"Bluetooth, Wi-Fi",LCD,1.32,320 x 300,50,1,Yes,Yes,Yes,$399 
+Timex,Metropolitan R AMOLED,Timex OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,30,3,Yes,No,Yes,$179 
+Garmin,Instinct Solar,Garmin OS,"Bluetooth, Wi-Fi",Monochrome,0.9,128 x 128,100,24,Yes,Yes,No,$399 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Amazfit,GTR 2,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$179 
+Garmin,Venu Sq Music,Garmin OS,"Bluetooth, Wi-Fi",LCD,1.3,240 x 240,50,6,Yes,Yes,Yes,$249 
+Samsung,Galaxy Watch,Tizen OS,"Bluetooth, Wi-Fi, Cellular",Super AMOLED,1.3,360 x 360,50,4,Yes,Yes,Yes,$259 
+Suunto,9 Peak,Suunto OS,"Bluetooth, Wi-Fi",Transflective,1.2,240 x 240,100,14,Yes,Yes,No,$569 
+Honor,MagicWatch 2,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$159 
+TicWatch,Pro 3,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.4,454 x 454,50,3,Yes,Yes,Yes,$299 
+Garmin,Lily,Garmin OS,"Bluetooth, Wi-Fi",LCD,1,240 x 201,50,5,Yes,Yes,Yes,$199 
+Fitbit,Ionic,Fitbit OS,"Bluetooth, Wi-Fi, Cellular",LCD,1.42,348 x 250,50,5,Yes,Yes,Yes,$299 
+Huawei,Watch GT 2e,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,No,Yes,$139 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,2,Yes,Yes,Yes,$149 
+Michael Kors,Access Runway,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,1,Yes,Yes,Yes,$349 
+Asus,ZenWatch 3,Android Wear,"Bluetooth, Wi-Fi",AMOLED,1.39,400 x 400,50,2,Yes,Yes,No,$229 
+Mobvoi,TicWatch Pro 3,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.4,454 x 454,50,3,Yes,Yes,Yes,$299 
+Skagen,Falster 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,1,Yes,Yes,Yes,$295 
+Nokia,Steel HR,Proprietary OS,Bluetooth,PMOLED,1.1,126 x 36,50,25,Yes,No,Yes,$179 
+Misfit,Vapor X,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,328 x 328,30,2,Yes,Yes,Yes,$279 
+Kate Spade,Scallop 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.19,390 x 390,30,1,Yes,Yes,Yes,$295 
+Diesel,On Full Guard 2.5,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,1,Yes,Yes,Yes,$325 
+Matrix,PowerWatch 2,Proprietary OS,Bluetooth,LCD,1.2,228 x 172,200,Unlimited,Yes,Yes,No,$499 
+TicWatch,C2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.3,360 x 360,50,1,Yes,Yes,Yes,$199 
+Mobvoi,TicWatch S2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.39,400 x 400,50,2,Yes,Yes,Yes,$179 
+Amazfit,GTR 2e,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,24,Yes,Yes,Yes,$139 
+Apple,Watch Series 6,watchOS,"Bluetooth, Wi-Fi, Cellular",Retina,1.78,368 x 448,50,18,Yes,Yes,Yes,$399 
+Fitbit,Ionic,Fitbit OS,"Bluetooth, Wi-Fi",LCD,1.42,348 x 250,50,4,Yes,Yes,Yes,$249 
+Garmin,Enduro,Garmin OS,"Bluetooth, Wi-Fi",Transflective,1.4,280 x 280,100,70,Yes,Yes,Yes,$799 
+Huawei,Watch GT 2 Pro,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$299 
+Oppo,Watch 2 ECG Edition,ColorOS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.75,372 x 430,50,16,Yes,Yes,Yes,$299 
+Suunto,9 Peak,Suunto OS,"Bluetooth, Wi-Fi",Transflective,1.2,320 x 300,100,14,Yes,Yes,No,$499 
+TicWatch,E3,Wear OS,"Bluetooth, Wi-Fi",LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Fossil,Sport,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.2,390 x 390,50,24,Yes,Yes,Yes,$299 
+Samsung,Gear S3 Frontier,Tizen OS,"Bluetooth, Wi-Fi",Super AMOLED,1.3,360 x 360,50,3,Yes,Yes,Yes,$299 
+Amazfit,GTR 2,Amazfit OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$179 
+Garmin,Venu Sq,Garmin OS,"Bluetooth, Wi-Fi",LCD,1.3,240 x 240,50,6,Yes,Yes,Yes,$179 
+Xiaomi,Mi Watch Revolve,Proprietary OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,14,Yes,Yes,Yes,$119 
+Skagen,Falster 3,Wear OS,"Bluetooth, Wi-Fi",OLED,1.3,328 x 328,30,24,Yes,Yes,Yes,$295 
+Michael Kors,Access Bradshaw 2,Wear OS,"Bluetooth, Wi-Fi",AMOLED,1.28,416 x 416,30,2,Yes,Yes,Yes,$350 
+Casio,G-Shock GSW-H1000,Wear OS,"Bluetooth, Wi-Fi",LCD,1.2,360 x 360,200,1,Yes,Yes,No,$699 
+Mobvoi,TicWatch E3,Wear OS,"Bluetooth, Wi-Fi",IPS LCD,1.3,360 x 360,50,3,Yes,Yes,Yes,$199 
+Withings,ScanWatch,Withings OS,"Bluetooth, Wi-Fi",PMOLED,1.38,348 x 442,50,30,Yes,No,Yes,$279 
+Zepp,Z,Zepp OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.39,454 x 454,50,15,Yes,Yes,Yes,$349 
+Honor,Watch GS Pro,Lite OS,"Bluetooth, Wi-Fi",AMOLED,1.39,454 x 454,50,25,Yes,Yes,Yes,$249 
+Oppo,Watch Free,ColorOS,"Bluetooth, Wi-Fi",AMOLED,1.64,326 x 326,50,14,Yes,No,Yes,$159 
+TicWatch,Pro 3,Wear OS,"Bluetooth, Wi-Fi, Cellular",AMOLED,1.4,454 x 454,50,72,Yes,Yes,Yes,$299 

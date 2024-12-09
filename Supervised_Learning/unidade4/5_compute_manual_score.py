@@ -1,11 +1,15 @@
 import numpy as np
 from src.utils import processing_all_features_sales_clean
 
+#Soma dos quadrados dos erros
 def compute_RSS(predictions,y):
-    RSS = None
+    sub_squared = np.square(y - predictions)
+    RSS = np.sum(sub_squared)
     return RSS
+
 def compute_MSE(predictions,y):
-    MSE= None
+    RSS = compute_RSS(predictions, y)
+    MSE= np.divide(RSS, len(predictions))
     return MSE
 def compute_RMSE(predictions,y):
     RMSE = None
