@@ -8,39 +8,41 @@ from sklearn.model_selection import train_test_split
 # Carregar o dataset
 WineQT = pd.read_csv('./dataset/wineqt_ajustado.csv')
 
-# DataFrame com todas as colunas, com exceção de ``quality``
+# Dividir os dados em features (X) e labels (y)
 X = WineQT.drop("quality", axis=1).values
-
-# Dataframe de labels com a coluna quality
 y = WineQT['quality'].values
 
-# Aplicando normalização media zero e variância unitária
+# Normalizar os dados (média zero e variância unitária)
 scaler = StandardScaler()
-X_norm = scaler.fit_transform(X)
+X_scaled = scaler.fit_transform(X)
 
-# Separando o conjunto de teste e treino
-X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
+# Dividir os dados em conjuntos de treino e teste
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, stratify=y, random_state=42)
 
-neighbors = np.arange(1, 26)
-train_accuracies = {}
-test_accuracies = {}
+# Intervalo de vizinhos a ser testado
+neighbors_range = np.arange(1, 26)
+train_accuracies = []
+test_accuracies = []
 
-for neighbor in neighbors:
-    knn = KNeighborsClassifier(n_neighbors=neighbor)
-
+# Avaliar o desempenho para cada número de vizinhos
+for n_neighbors in neighbors_range:
+    knn = KNeighborsClassifier(n_neighbors=n_neighbors)
     knn.fit(X_train, y_train)
 
-    train_accuracies[neighbor] = knn.score(X_train, y_train)
-    test_accuracies[neighbor] = knn.score(X_test, y_test)
+    train_accuracies.append(knn.score(X_train, y_train))
+    test_accuracies.append(knn.score(X_test, y_test))
 
-print("acuracy on train: ",train_accuracies)
-print("acuracy on test: ", test_accuracies)
+# Exibir os resultados
+print("Acurácias no treino:", train_accuracies)
+print("Acurácias no teste:", test_accuracies)
 
-plt.figure(figsize=(8,6))
-plt.title("KNN: Varying Number of neighbors")
-plt.plot(neighbors, train_accuracies.values(), label="Training Accuracies")
-plt.plot(neighbors, test_accuracies.values(), label="Test Accuracies")
+# Plotar os resultados
+plt.figure(figsize=(8, 6))
+plt.plot(neighbors_range, train_accuracies, label="Acurácia no Treino", marker='o')
+plt.plot(neighbors_range, test_accuracies, label="Acurácia no Teste", marker='o')
+plt.title("KNN: Variando o Número de Vizinhos")
+plt.xlabel("Número de Vizinhos")
+plt.ylabel("Acurácia")
 plt.legend()
-plt.xlabel("Numero de neighbors")
-plt.ylabel("Accuracies")
+plt.grid()
 plt.show()
