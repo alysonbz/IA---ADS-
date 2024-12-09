@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from src.utils import load_sales_clean_dataset
 
 # Import Lasso
-from ____.____ import ____
+from sklearn.linear_model import Lasso
 
 sales_df = load_sales_clean_dataset()
 
@@ -12,10 +12,10 @@ y = sales_df["sales"].values
 sales_columns = X.columns
 
 # Instantiate a lasso regression model
-lasso = ____
+lasso = Lasso(alpha=0.3)
 
 # Compute and print the coefficients
-lasso_coef = ____
+lasso_coef = lasso.fit(X,y).coef_
 print(lasso_coef)
 plt.bar(sales_columns, lasso_coef)
 plt.xticks(rotation=45)

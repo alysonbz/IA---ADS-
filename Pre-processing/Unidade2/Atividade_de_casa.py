@@ -1,6 +1,8 @@
 
 import math
+
 import pandas as pd
+
 
 def dist_euclidiana(v1, v2):
     return math.sqrt(sum((v1[i] - v2[i]) ** 2 for i in range(len(v1) - 1)))
