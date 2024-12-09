@@ -26,7 +26,7 @@ scaler = StandardScaler()
 X_train_norm = scaler.fit_transform(X_train)
 X_test_norm = scaler.transform(X_test)
 
-def knn_mahalanobis(X_train, X_test, y_train, y_test, n_neighbors=7):
+def knn_mahalanobis(X_train, X_test, y_train, y_test, n_neighbors=10):
     cov_matrix = np.cov(X_train.T)
     inv_cov_matrix = np.linalg.inv(cov_matrix)
 

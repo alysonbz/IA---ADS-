@@ -1,15 +1,27 @@
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.metrics import accuracy_score
 
 # Carregar o dataset
 WineQT = pd.read_csv('./dataset/wineqt_ajustado.csv')
 
-# Crie um DataFrame com todas as colunas, com exceção de ``quality``
+# Separar os dados em características (X) e rótulos (y)
 X = WineQT.drop("quality", axis=1).values
-
-# Crie um dataframe de labels com a coluna quality
 y = WineQT['quality'].values
+
+# Normalizar os dados (StandardScaler)
+scaler = StandardScaler()
+X = scaler.fit_transform(X)
+
+# Determinar o número de componentes para PCA
+n_components = min(X.shape[0], X.shape[1])  # mínimo entre amostras e características
+
+# Reduzir dimensionalidade (PCA)
+pca = PCA(n_components=n_components)
+X = pca.fit_transform(X)
 
 # Separando o conjunto de teste e treino
 X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
@@ -49,12 +61,11 @@ def knn(treinamento, nova_amostra, K, distancia_func, matriz_cov=None):
 
 # Avaliar o KNN
 def avaliar_knn(teste, treinamento, K, distancia_func, matriz_cov=None):
-    acertos = 0
+    predicoes = []
     for amostra in teste:
         classe = knn(treinamento, amostra, K, distancia_func, matriz_cov)
-        if amostra[-1] == classe:
-            acertos += 1
-    return 100 * acertos / len(teste)
+        predicoes.append(classe)
+    return accuracy_score([amostra[-1] for amostra in teste], predicoes) * 100
 
 # Matriz de covariância para distância Mahalanobis
 matriz_cov = np.cov(X_train.T)

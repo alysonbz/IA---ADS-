@@ -1,73 +1,67 @@
 from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import KFold
 import numpy as np
 import pandas as pd
 
+
+# Funções para cálculo de métricas
 def compute_RSS(predictions, y):
-    aux = np.square(y - predictions)
-    RSS = np.sum(aux)
-    return RSS
+    return np.sum(np.square(y - predictions))
 
 
 def compute_MSE(predictions, y):
-    RSS = compute_RSS(predictions, y)
-    MSE = np.divide(RSS, len(predictions))
-    return MSE
+    return compute_RSS(predictions, y) / len(predictions)
 
 
 def compute_RMSE(predictions, y):
-    MSE = compute_MSE(predictions, y)
-    RMSE = np.sqrt(MSE)
-    return RMSE
+    return np.sqrt(compute_MSE(predictions, y))
 
 
 def compute_R_squared(predictions, y):
-    var_pred = np.sum(np.square(y - np.mean(y)))
-    var_data = compute_RSS(predictions, y)
-    r_squared = np.divide(var_pred, var_data)
-    return r_squared
+    total_variance = np.sum(np.square(y - np.mean(y)))
+    residual_variance = compute_RSS(predictions, y)
+    return 1 - (residual_variance / total_variance)
 
-class KFold:
 
+# Classe KFold customizada
+class CustomKFold:
     def __init__(self, n_splits):
         self.n_splits = n_splits
 
-    def compute_score(self, obj, X, y):
-        obj.fit(X[0], y[0])
-        return obj.score(X[1], y[1])
-
-    def cross_val_score(self, reg, X, y):
+    def cross_val_score(self, model, X, y):
+        kf = KFold(n_splits=self.n_splits, shuffle=True, random_state=42)
         scores = []
-        n_samples = len(X)
-        fold_size = n_samples // self.n_splits
 
-        for i in range(self.n_splits):
-            start = i * fold_size
-            end = start + fold_size if i < self.n_splits - 1 else n_samples
+        for train_index, test_index in kf.split(X):
+            X_train, X_test = X[train_index], X[test_index]
+            y_train, y_test = y[train_index], y[test_index]
 
-            X_test = X[start:end]
-            y_test = y[start:end]
-            X_train = np.concatenate([X[:start], X[end:]])
-            y_train = np.concatenate([y[:start], y[end:]])
-
-            score = self.compute_score(reg, (X_train, X_test), (y_train, y_test))
+            model.fit(X_train, y_train)
+            score = model.score(X_test, y_test)
             scores.append(score)
 
         return scores
 
+
+# Carregar o dataset
 Regression = pd.read_csv('./dataset/Regression_ajustado.csv')
 
+# Preparar os dados
 X = Regression["sp500 open"].values.reshape(-1, 1)
 y = Regression["sp500 low"].values
 
-kf = KFold(n_splits=6)
-
+# Instanciar o modelo de regressão linear
 reg = LinearRegression()
-reg.fit(X, y)
 
+# Treinar o modelo com todos os dados
+reg.fit(X, y)
 pred = reg.predict(X)
 
+# Aplicar validação cruzada
+kf = CustomKFold(n_splits=6)
 cv_score = kf.cross_val_score(reg, X, y)
 
+# Exibir resultados
 print("Cv Score: ", cv_score)
 print("Média: ", np.mean(cv_score))
 print("Desvio Padrão: ", np.std(cv_score))
