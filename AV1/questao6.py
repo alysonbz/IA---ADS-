@@ -6,6 +6,11 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 house_df = load_new_dataframe_kc_house()
 
+def compute_RSS(predictions, y):
+    # Diferenças quadráticas somadas
+    RSS = np.sum(np.square(y - predictions))
+    return RSS
+
 X = house_df["sqft_living"].values.reshape(-1,1)
 y = house_df["price"].values
 
@@ -27,7 +32,7 @@ plt.show()
 r_squared = reg.score(X_test, y_test)
 
 #RSS
-rss = np.square(y-y_pred)
+rss = compute_RSS(y_pred, y)
 
 #MSE
 mse = mean_squared_error(y, y_pred)
