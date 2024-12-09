@@ -1,3 +1,94 @@
+Manufacturer{
+ACURA = 1
+ALFA ROMEO = 2
+ASTON MARTIN = 3
+AUDI = 4
+BENTLEY = 5
+BMW = 6
+BUICK = 7
+CADILLAC = 8
+CHEVROLET = 9
+CHRYSLER = 10
+CITROEN = 11
+DAEWOO = 12
+DAIHATSU = 13
+DODGE = 14
+FERRARI = 15
+FIAT = 16
+FORD = 17
+GAZ = 18
+GMC = 19
+GREATWALL = 20
+HAVAL = 21
+HONDA = 22
+HUMMER = 23
+HYUNDAI = 24
+INFINITI = 25
+ISUZU = 26
+JAGUAR = 27
+JEEP = 28
+KIA = 29
+LAMBORGHINI = 30
+LANCIA = 31
+LAND ROVER = 32
+LEXUS = 33
+LINCOLN = 34
+MASERATI = 35
+MAZDA = 36
+MERCEDES-BENZ = 37
+MERCURY = 38
+MINI = 39
+MITSUBISHI = 40
+MOSKVICH = 41
+NISSAN = 42
+OPEL = 43
+PEUGEOT = 44
+PONTIAC = 45
+PORSCHE = 46
+RENAULT = 47
+ROLLS-ROYCE = 48
+ROVER = 49
+SAAB = 50
+SATURN = 51
+SCION = 52
+SEAT = 53
+SKODA = 54
+SSANGYONG = 55
+SUBARU = 56
+SUZUKI = 57
+TESLA = 58
+TOYOTA = 59
+UAZ = 60
+VAZ = 61
+VOLKSWAGEN = 62
+VOLVO = 63
+ZAZ = 64
+სხვა = 65}
+
+Leather interior{
+Yes = 1
+No = 0}
+
+Fuel type{
+CNG = 1
+Diesel = 2
+Hybrid = 3
+Hydrogen = 4
+LPG = 5
+Petrol = 6
+Plug-in Hybrid = 7}
+
+Gear box type{
+Automatic = 1
+Manual = 2
+Tiptronic = 3
+Variator = 4}
+
+Drive wheels{
+4x4 = 1
+Front = 2
+Rear = 3}
+
 Category{
 Cabriolet = 1
 Coupe = 2
