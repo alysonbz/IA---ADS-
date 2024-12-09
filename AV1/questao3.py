@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 # Carregar o dataset
 WineQT = pd.read_csv('./dataset/wineqt_ajustado.csv')
 
-# DataFrame com todas as colunas, com exceção de ``quality``
+# DataFrame com todas as colunas, com exceção de `quality`
 X = WineQT.drop("quality", axis=1).values
 
 # Dataframe de labels com a coluna quality

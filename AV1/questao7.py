@@ -1,8 +1,6 @@
 from sklearn.linear_model import LinearRegression
 import numpy as np
-
-from AV1.questao5 import Regression
-
+import pandas as pd
 
 def compute_RSS(predictions, y):
     aux = np.square(y - predictions)
@@ -28,13 +26,12 @@ def compute_R_squared(predictions, y):
     r_squared = np.divide(var_pred, var_data)
     return r_squared
 
-
 class KFold:
 
     def __init__(self, n_splits):
         self.n_splits = n_splits
 
-    def _compute_score(self, obj, X, y):
+    def compute_score(self, obj, X, y):
         obj.fit(X[0], y[0])
         return obj.score(X[1], y[1])
 
@@ -52,10 +49,12 @@ class KFold:
             X_train = np.concatenate([X[:start], X[end:]])
             y_train = np.concatenate([y[:start], y[end:]])
 
-            score = self._compute_score(reg, (X_train, X_test), (y_train, y_test))
+            score = self.compute_score(reg, (X_train, X_test), (y_train, y_test))
             scores.append(score)
 
         return scores
+
+Regression = pd.read_csv('./dataset/Regression_ajustado.csv')
 
 X = Regression["sp500 open"].values.reshape(-1, 1)
 y = Regression["sp500 low"].values
@@ -76,4 +75,4 @@ print("\n")
 print("RSS: {}".format(compute_RSS(pred, y)))
 print("MSE: {}".format(compute_MSE(pred, y)))
 print("RMSE: {}".format(compute_RMSE(pred, y)))
-print("R^2: {}".format(compute_R_squared(pred, y)))
+print("R_Squared2: {}".format(compute_R_squared(pred, y)))

@@ -9,8 +9,8 @@ import numpy as np
 Regression = pd.read_csv('./dataset/Regression_ajustado.csv')
 
 # Ajustar as dimensões de X e y
-X = Regression["sp500 open"].values.reshape(-1, 1)  # Transformar em array 2D
-y = Regression["sp500 low"].values  # Array 1D está correto
+X = Regression["sp500 open"].values.reshape(-1, 1)
+y = Regression["sp500 low"].values
 
 # Dividir os dados em treino e teste
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -32,7 +32,7 @@ plt.show()
 
 # Calcular métricas
 r_squared = reg.score(X_test, y_test)
-rss = np.sum(np.square(y_test - reg.predict(X_test)))  # Ajustado para os dados de teste
+rss = np.sum(np.square(y_test - reg.predict(X_test)))
 mse = mean_squared_error(y_test, y_pred)
 rmse = np.sqrt(mse)
 
@@ -40,4 +40,4 @@ rmse = np.sqrt(mse)
 print(f"RSS: {rss:.4f}")
 print(f"MSE: {mse:.4f}")
 print(f"RMSE: {rmse:.4f}")
-print(f"R^2: {r_squared:.4f}")
+print(f"R_Squared2: {r_squared:.4f}")

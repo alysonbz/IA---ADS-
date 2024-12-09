@@ -28,7 +28,7 @@ target_candidates = [
 print("\nCandidatos para alvo (regressão):", target_candidates)
 
 # Definir a variável alvo
-target = "sp500 open"  # Substitua pelo nome da sua variável alvo
+target = "sp500 open"  
 
 # Calcular a correlação com o alvo, ordenando por magnitude
 correlations = corr_matrix[target].drop(target).sort_values(key=abs, ascending=False)
