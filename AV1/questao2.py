@@ -1,16 +1,15 @@
 import numpy as np
-import pandas as pd
 import math
+from src.utils import Hotel_Normalizado
 
-# dataset
-data_path = '../AV1/dataset/Hotel_Atualizado.csv'
-dataset = pd.read_csv(data_path)
-print("Dimensão do dataset:", dataset.shape)
-print(dataset.info())
+Hotel  = Hotel_Normalizado()
+
+print("Dimensão do dataset:", Hotel.shape)
+print("Informações do dataset:", Hotel.info())
 
 # Amostragem aleatória para reduzir o tamanho do dataset (testar com 10%)
 tamanho_amostra = 0.1
-dataset_reduzido = dataset.sample(frac=tamanho_amostra, random_state=42)
+dataset_reduzido = Hotel.sample(frac=tamanho_amostra, random_state=42)
 
 # Separar o dataset em X (features) e y (classe/target)
 X = dataset_reduzido.drop(columns=["booking_status_Not_Canceled"]).values

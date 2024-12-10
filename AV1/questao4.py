@@ -8,9 +8,9 @@ from sklearn.preprocessing import FunctionTransformer
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
-from src.utils import Hotel_Atualizado
+from src.utils import Hotel_Normalizado
 
-Hotel = Hotel_Atualizado()
+Hotel = Hotel_Normalizado()
 print("Dimensão do dataset:", Hotel)
 
 # Separar o dataset em X (features) e y (classe/target)
@@ -36,7 +36,7 @@ X_test_std = scaler.transform(X_test)
 
 # Definir o modelo KNN com k=7
 k = 7
-knn = KNeighborsClassifier(n_neighbors=k, metric='euclidean')
+knn = KNeighborsClassifier(n_neighbors=k, metric='manhattan')
 
 # Função para calcular a acurácia para diferentes valores de k
 def avaliar_k(knn, X_train, y_train, X_test, y_test, max_k=20):

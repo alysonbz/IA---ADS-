@@ -6,6 +6,7 @@ from src.utils import Smart_Watch
 Relogio_Inteligente = Smart_Watch()
 
 # Tratar os valores ausentes (NaN)
+
 Relogio_Inteligente.dropna(inplace=True)
 
 # Converter variáveis categóricas em numéricas
@@ -14,8 +15,8 @@ for coluna in Relogio_Inteligente.select_dtypes(include='object').columns:
     Relogio_Inteligente[coluna] = le.fit_transform(Relogio_Inteligente[coluna])
 
 #separar obj target
-X = Relogio_Inteligente.drop(columns=["Battery Life (days)"]).values
-y = Relogio_Inteligente["Battery Life (days)"].values
+X = Relogio_Inteligente.drop(columns=["Brand"]).values
+y = Relogio_Inteligente["Brand"].values
 
 correlacao = Relogio_Inteligente.corr()
 
@@ -25,11 +26,11 @@ plt.title("Mapa de Correlação")
 plt.show()
 
 # Ver a correlação direta com o alvo (Battery Life)
-correlacao_target = correlacao["Battery Life (days)"].sort_values(ascending=False)
-print("Correlação com Battery Life (days):\n", correlacao_target)
+correlacao_target = correlacao["Brand"].sort_values(ascending=False)
+print("Correlação com Brand:\n", correlacao_target)
 
 # Salvar o dataset modificado
 
-Relogio_Inteligente.to_csv('Smart_Watch_Atualizado.csv', index=False)
+#Relogio_Inteligente.to_csv('Smart_Watch_Atualizado.csv', index=False)
 
 print("Dataset modificado salvo como 'Smart_Watch_Atualizado.csv'")

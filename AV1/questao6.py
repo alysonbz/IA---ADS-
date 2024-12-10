@@ -8,9 +8,9 @@ from src.utils import Smart_Watch_Atualizado
 Relogio_Inteligente = Smart_Watch_Atualizado()
 
 #atributo mais relevante (Model ou SO)
-atributo_relevante = "Model"
+atributo_relevante = "Brand"
 X = Relogio_Inteligente[[atributo_relevante]]
-y = Relogio_Inteligente["Battery Life (days)"]  # Meu Alvo
+y = Relogio_Inteligente["Operating System"]  # Meu Alvo
 
 # Dividir os dados em treino e teste
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
@@ -47,7 +47,7 @@ plt.scatter(X_test, y_test, color='blue', label="Valores Reais", alpha=0.7)
 plt.plot(X_test, y_pred, color='red', label="Reta de Regressão")
 plt.title(f"Regressão Linear com '{atributo_relevante}'")
 plt.xlabel(atributo_relevante)
-plt.ylabel("Battery Life (days)")
+plt.ylabel("Operating System")
 plt.legend()
 plt.grid(True)
 plt.show()

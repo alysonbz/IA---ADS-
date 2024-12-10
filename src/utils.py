@@ -8,6 +8,8 @@ from sklearn.model_selection import train_test_split
 def Smart_Watch_Atualizado():
     return pd.read_csv('../AV1/dataset/Smart_Watch_Atualizado.csv')
 
+def Hotel_Normalizado():
+    return pd.read_csv('../AV1/dataset/Hotel_Normalizado.csv')
 
 def Hotel_Atualizado():
     return pd.read_csv('../AV1/dataset/Hotel_Atualizado.csv')
