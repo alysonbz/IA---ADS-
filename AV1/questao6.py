@@ -20,9 +20,7 @@ def compute_RMSE(predictions, y):
     return RMSE
 
 def compute_R_squared(predictions, y):
-    total_variance = np.sum(np.square(y - np.mean(y)))
-    explained_variance = np.sum(np.square(predictions - np.mean(y)))
-    r_squared = explained_variance / total_variance
+    r_squared = (compute_RSS(predictions, np.mean(y)) / compute_RSS(y, np.mean(y)))
     return r_squared
 
 merged_data = pd.read_csv("dataset/regression/merged_ferrari_tesla.csv")

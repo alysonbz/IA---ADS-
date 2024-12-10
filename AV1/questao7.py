@@ -14,9 +14,8 @@ def compute_RMSE(predictions, y):
     return np.sqrt(compute_MSE(predictions, y))
 
 def compute_R_squared(predictions, y):
-    total_variance = np.sum(np.square(y - np.mean(y)))
-    explained_variance = np.sum(np.square(predictions - np.mean(y)))
-    return explained_variance / total_variance
+    r_squared = (compute_RSS(predictions, np.mean(y)) / compute_RSS(y, np.mean(y)))
+    return r_squared
 
 # Implementação do KFold manual
 class KFold:
