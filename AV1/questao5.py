@@ -14,8 +14,11 @@ df_one_hot = pd.get_dummies(df, columns=colunas_categoricas, drop_first=True)
 
 matriz_correlacao = df_one_hot.corr()
 
+dataframe_ajustado = "../AV1/datasets/novo_Clean_Dataset.csv"
+df.to_csv(dataframe_ajustado, index=False)
 
-plt.figure(figsize=(100, 80))
+
+plt.figure(figsize=(100, 100))
 sns.heatmap(matriz_correlacao, annot=True, cmap="coolwarm")
 plt.title("Matriz de Correlação (Com Variáveis Codificadas)")
 plt.show()

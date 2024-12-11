@@ -4,8 +4,7 @@ file_path = "../AV1/datasets/creditcard_2023.csv"
 df = pd.read_csv(file_path)
 
 df = df.dropna()
-
-
+df = df.drop(["id"], axis=1)
 print(df)
 print(df['Class'].value_counts())
 
