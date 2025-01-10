@@ -1,0 +1,31 @@
+Padrão de avaliação da notas
+
+Apresentação:4
+Código:2
+Relatório:2
+atividade:2
+
+
+Resutado obtido:
+
+Apresentação: 1.6
+ obs:
+ não explicou como fez a conversão de dados categóricos.
+ Não explicou o que é viés.
+ Muita leitura de slide.
+ Determinou  o k no conjunto de treino.
+ Não explicou  o kfold.
+
+ CódIgo: 1.5
+ OBS: O Pré processamento feito na questão dois era apra ter sido feito na questão 1. Precisa organizar
+ também melhor o código.
+
+ relatório: 1.5
+ obs: Análise superficial dos resutlados
+
+ Atividade: 1
+ obs: Muitas atividades incompletas ou faltantes
+
+ nota: 5,6
+
+
