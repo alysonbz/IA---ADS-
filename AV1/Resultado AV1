@@ -1,0 +1,23 @@
+                Padrão de avaliação da notas
+
+Apresentação:4
+Código:2
+Relatório:2
+atividade:2
+
+
+Resutado obtido:
+
+Apresentação: 2,4
+obs: Código na apresentação, só usou matriz de correlação e lasso.
+ Não explicou a diferença entre as medidas de métricas de regressão.
+
+código: 2
+
+Relatório: 1
+obs: O ideial é que nao seja mostrado print de código em relatório. Somente se for uma situação
+específica necessária. Utulizar mais diagramsa de blocos para exemplificar os passos dos algoritmos.
+
+Atividades: 2
+
+Nota: 7,4
