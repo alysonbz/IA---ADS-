@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import numpy as np
 
 # 1. Carregar o dataset
-data = pd.read_csv(r'C:\Users\pinheiroiwnl\Desktop\AV1\IA---ADS-\AV1\king_county_preprocessed.csv')
+data = pd.read_csv(r'king_county_preprocessed.csv')
 
 # 2. Definir o alvo para regressão
 # O alvo é o preço da casa ('price')

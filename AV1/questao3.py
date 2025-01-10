@@ -8,7 +8,7 @@ import numpy as np
 
 # 1. Importar o dataset atualizado
 
-data = pd.read_csv(r'C:\Users\pinheiroiwnl\Desktop\AV1\IA---ADS-\AV1\diabestes_ajustado.csv')
+data = pd.read_csv(r'diabestes_ajustado.csv')
 
 # 2. Dividir o dataset em treino e teste
 X = data.drop("Outcome", axis=1)

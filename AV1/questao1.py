@@ -4,7 +4,7 @@ from sklearn.linear_model import Lasso
 
 
 # 1. Importar o dataset
-df = pd.read_csv(r'C:\Users\pinheiroiwnl\Desktop\AV1\IA---ADS-\AV1\diabetes.csv')
+df = pd.read_csv(r'diabetes.csv')
 
 # 2. Verificar células vazias ou NaN
 print(df.isnull().sum())

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 1. Carregar o dataset
-data = pd.read_csv(r'C:\Users\pinheiroiwnl\Desktop\AV1\IA---ADS-\AV1\kc_house_data.csv')
+data = pd.read_csv(r'kc_house_data.csv')
 
 # 2. Verificar valores NaN e removê-los, se houver
 data_cleaned = data.dropna()

@@ -1,0 +1,26 @@
+Padrão de avaliação da notas
+
+Apresentação:4
+Código:2
+Relatório:2
+atividade:2
+
+
+Resutado obtido:
+
+Apresentação: 2
+obs: depende de ler muito a apresentação.
+Print de console na aprsentação. Nao explicou para que serve a normalização.
+Não dividiu o conjunto de dados.  Nao explicou as métricas de avaliação.
+
+Código: 2
+Na primeira questão não teve nenhuma aleteração no dataframe, só foram mostrados aguns atributos e apesar
+de mostrado as colunas mais relevantes, as que não são, nãoo foram retiradas.
+
+relatório: 1
+obs: Print de console no relatório. Discussão superficial dos resultados obtidos.
+
+Atiidades: 1
+obs: Algumas atividades incompletas ou faltantes ou apresentando erro ao rodar.
+
+Nota: 6
