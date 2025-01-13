@@ -1,0 +1,31 @@
+Padrão de avaliação da notas
+
+Apresentação:4
+Código:2
+Relatório:2
+atividade:2
+
+
+Resutado obtido:
+
+  Apresentação: 2,5
+  obs: Bastante print de código. Faltou mais seguranaça na questão 1.
+  Acertou parcialente a pergunta sobre normalização.
+  Implementação exibida parcialmente correte. Não explicou  sobre rmse.
+
+  Código: 1,5
+  Obs: Na ques~tao 1 não são os daddos pre-processados.
+       questão 2 com bastante demora para mostrar resultados, precisa de otimização em termos
+       de boas práticas de programação
+
+  Relatório: 1
+  obs:  Evitar colocar print de código em relatório. Buscar utilizar mais diagramas de blocos para mostrar
+  o fluxo do processo. As discussões tb estão superficiais.
+
+  Atividades: 2
+
+  Nota: 7
+
+
+
+
