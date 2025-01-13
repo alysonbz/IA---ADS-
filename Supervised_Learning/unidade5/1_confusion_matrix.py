@@ -1,3 +1,5 @@
+import numpy as np
+from sklearn.preprocessing import StandardScaler
 from src.utils import load_diabetes_clean_dataset
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
@@ -5,12 +7,18 @@ from sklearn.model_selection import train_test_split
 #Import confusion matrix
 from sklearn.metrics import classification_report, confusion_matrix
 
+scaler = StandardScaler()
+
 diabetes_df = load_diabetes_clean_dataset()
 X = diabetes_df.drop(['diabetes'],axis=1)
 y = diabetes_df['diabetes'].values
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42,stratify=y)
 
-knn = KNeighborsClassifier(n_neighbors=6)
+X_norm = scaler.fit_transform(X)
+
+X_train, X_test, y_train, y_test = train_test_split(X_norm, y, stratify=y, random_state=42)
+
+
+knn = KNeighborsClassifier(n_neighbors=7)
 
 # Fit the model to the training data
 knn.fit(X_train, y_train)
