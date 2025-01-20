@@ -13,3 +13,4 @@ print(confusion_matrix(y_test, y_pred))
 
 # Calculate the classification report
 print(classification_report(y_test, y_pred))
+
