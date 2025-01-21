@@ -39,7 +39,7 @@ R_squared = r2_score(y, y_pred)
 
 print(f"Coeficiente angular (m): {coef_angular:.4f}")
 print(f"Intercepto (b): {intercepto:.4f}")
-print(f"RSS: {RSS / 1e9:.2f} bilhões")
+print(f"RSS: {RSS:.2f}")
 print(f"MSE: {MSE:.2f}")
 print(f"RMSE: {RMSE:.2f}")
 print(f"R²: {R_squared:.2f}")

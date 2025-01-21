@@ -2,7 +2,6 @@ import math
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from scipy.spatial import distance
 
 file_path = "../AV1/datasets/novo_creditcard.csv"
 df = pd.read_csv(file_path)
@@ -37,9 +36,8 @@ def knn(X_train, y_train, X_test, k, dist_func, cov_inv=None):
     for test_point in X_test:
         distances = []
         for train_point, train_label in zip(X_train, y_train):
-            # Passar cov_inv apenas se a função de distância for Mahalanobis
             if dist_func == dist_mahalanobis:
-                dist = dist_func(test_point, train_point, cov_inv)  # Passando cov_inv para Mahalanobis
+                dist = dist_func(test_point, train_point, cov_inv)
             else:
                 dist = dist_func(test_point, train_point)
             distances.append((dist, train_label[0]))
