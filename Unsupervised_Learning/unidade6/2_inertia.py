@@ -3,25 +3,29 @@ import pandas as pd
 from src.utils import load_grains_dataset
 from sklearn.cluster import KMeans
 
+# Carregar o dataset de grãos
 samples_df = load_grains_dataset()
-samples = samples_df.drop(['variety','variety_number'],axis=1)
+samples = samples_df.drop(['variety', 'variety_number'], axis=1)
 
+# Definir o intervalo de valores para k
 ks = range(1, 6)
 inertias = []
 
+# Iterar sobre os valores de k
 for k in ks:
-    # Create a KMeans instance with k clusters: model
-    ____
+    # Criar uma instância do KMeans com k clusters
+    model = KMeans(n_clusters=k)
 
-    # Fit model to samples
-    ____
+    # Ajustar o modelo aos dados
+    model.fit(samples)
 
-    # Append the inertia to the list of inertias
-    ____
+    # Adicionar a inércia do modelo à lista de inércias
+    inertias.append(model.inertia_)
 
-# Plot ks vs inertias
+# Plotar os valores de k vs inércia
 plt.plot(ks, inertias, '-o')
-plt.xlabel('number of clusters, k')
-plt.ylabel('inertia')
+plt.xlabel('Número de clusters, k')
+plt.ylabel('Inércia')
 plt.xticks(ks)
+plt.title('Método do Cotovelo')
 plt.show()
