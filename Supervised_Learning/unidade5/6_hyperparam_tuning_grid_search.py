@@ -1,16 +1,10 @@
+from random import shuffle
 import numpy as np
-
-#import Lasso
-_______
-
-#import train_test_split
+from sklearn.linear_model import Ridge, RidgeCV, Lasso
+from scipy.stats import alpha
 from sklearn.model_selection import train_test_split
-
-#import kfold
-____
-
-# Import GridSearchCV
-______
+from sklearn.model_selection import KFold
+from sklearn.model_selection import GridSearchCV
 
 from src.utils import load_diabetes_clean_dataset
 
@@ -21,19 +15,19 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 
 #inicialize Lasso
-lasso  = ____
+lasso  = Lasso()
 
 #inicialize kfold
-kf = _____
+kf = KFold(n_splits=5, shuffle = True, random_state=42)
 
 #Set up the parameter grid
-param_grid = {"____": np.linspace(____, __, ___)}
+param_grid = {"alpha": np.linspace(0.0001, 1, 20)}
 
 # Instantiate lasso_cv
-lasso_cv = ____
+lasso_cv = GridSearchCV(estimator=lasso, param_grid=param_grid, cv=kf)
 
 # Fit to the training data
-___
+lasso_cv.fit (X_train, y_train)
 
 
 print("Tuned lasso paramaters: {}".format(lasso_cv.best_params_))
