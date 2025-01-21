@@ -1,0 +1,30 @@
+Padrão de avaliação da notas
+
+Apresentação:4
+Código:2
+Relatório:2
+atividade:2
+
+
+Resutado obtido:
+
+Apresentação: 2
+obs: Usou print de código.
+ Não conseguiu usar mahalanobis. Não explicou sobre a normalização.
+ Não trouxe o melhor k par o KNN de forma adequada.
+ Não explicou a avaliação de resultados. Não explicou o Kfold.
+
+ Código: 1,5
+
+ obs: Faltou organização e boas práticas de programação no processo de codificação.
+
+ relatório: 1
+
+ obs: Muito print de códido e de console no relatório. Descrição superficial dos resultados.
+ Necessário melhor organização textual também.
+
+ atividades: 1
+
+ obs: Algumas atividades incompletas ou faltantes.  Principalment as de casa, que pontuam mais.
+
+ NOta final: 5.5
