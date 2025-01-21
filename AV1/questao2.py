@@ -3,7 +3,7 @@ import math
 # Carregar o dataset
 dataset = []
 
-with open("Cancer_Data_Adjusted.csv", "r") as f:
+with open("Possum_Data_Adjusted.csv", "r") as f:
     next(f)  #ignora a 1º linha pois a 1ª contém o cabeçalho e não os dados numéricos
     for linha in f.readlines():
         valores = linha.strip().split(',')

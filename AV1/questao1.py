@@ -22,7 +22,7 @@ print(classification_df.isnull().sum())
 print("\nDados ausentes no Dataset de Regressão:")
 print(regression_df.isnull().sum())
 
-# Remover colunas irrelevantes, como 'Unnamed: 32' no dataset de classificação e 'case' no dataset de regressão
+# Remover colunas irrelevantes, 'Unnamed: 32' no dataset de classificação e 'case' no dataset de regressão
 classification_df = classification_df.drop(columns=["Unnamed: 32"], errors="ignore")
 regression_df = regression_df.drop(columns=["case"], errors="ignore")
 
