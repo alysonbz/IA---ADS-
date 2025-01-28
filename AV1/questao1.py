@@ -31,7 +31,7 @@ Hotel_Atualizado = pd.get_dummies(Hotel_Atualizado,
                                   columns=['room_type_reserved', 'booking_status'],
                                   drop_first=True)
 
-# Selecionar apenas colunas numéricas
+# Selecionar apenas colunas numéricas'
 colunas_numericas = Hotel_Atualizado.select_dtypes(include=['float64', 'int64']).columns
 
 # Criar uma cópia do dataframe

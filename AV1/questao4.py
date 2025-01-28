@@ -35,14 +35,14 @@ X_train_std = scaler.fit_transform(X_train)
 X_test_std = scaler.transform(X_test)
 
 # Definir o modelo KNN com k=7
-k = 7
+k = 61
 knn = KNeighborsClassifier(n_neighbors=k, metric='manhattan')
 
 # Função para calcular a acurácia para diferentes valores de k
 def avaliar_k(knn, X_train, y_train, X_test, y_test, max_k=20):
     acuracias = []
     for k in range(1, max_k + 1):
-        knn.set_params(n_neighbors=k)  # Ajusta o valor de k pra 7(testar)
+        knn.set_params(n_neighbors=7)  # Ajusta o valor de k pra 7(testar)
         knn.fit(X_train, y_train)
         acuracia = knn.score(X_test, y_test)
         acuracias.append(acuracia)
