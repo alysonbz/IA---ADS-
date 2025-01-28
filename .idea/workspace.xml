@@ -4,39 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7cd17ba-9375-40d4-a6eb-e89fe9bbd3bb" name="Changes" comment="Atividade 1 (Corrigida)">
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/2_data_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/2_data_types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade1/3_training_and_test_sets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/1_standardization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/1_standardization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/2_log_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/2_log_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/3_Scaling_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/3_Scaling_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pre-processing/Unidade2/Atividade_de_casa.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pre-processing/Unidade2/Atividade_de_casa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade3/0_class_anotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade3/0_class_anotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade3/1_k-Nearest-Neighbors-Fit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade3/1_k-Nearest-Neighbors-Fit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/1_create_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/1_create_features.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/2_build_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/2_build_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade4/3_visualize_predictions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade4/3_visualize_predictions.py" afterDir="false" />
+    <list default="true" id="c97e0f7c-9357-40e8-b426-a4bec0c67937" name="Changes" comment="Prova AV1 - Atualizada">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_11_2024_18_20_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_11_2024_18_20__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao1.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AV1/questao4.py" beforeDir="false" afterPath="$PROJECT_DIR$/AV1/questao4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supervised_Learning/unidade5/1_confusion_matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervised_Learning/unidade5/1_confusion_matrix.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Suziane-Brandao" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -50,33 +50,47 @@
     &quot;accountId&quot;: &quot;dcb3dabf-8734-4b04-9321-e39953c8e004&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2oJDtj9qCKIkdv7hlTVdlNtU7NM" />
+  <component name="ProjectId" id="2pw753RtZps9M4JH893IpnmwwfZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.0_class_anotation.executor": "Run",
-    "Python.1_pre_processing.executor": "Run",
-    "Python.1_standardization.executor": "Run",
-    "Python.2_build_regression.executor": "Run",
-    "Python.2_data_types.executor": "Run",
-    "Python.2_log_normalization.executor": "Run",
-    "Python.3_Scaling_data.executor": "Run",
-    "Python.3_training_and_test_sets.executor": "Run",
-    "Python.3_visualize_predictions.executor": "Run",
-    "Python.4_drop_nan.executor": "Run",
-    "Python.Atividade_de_casa.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Suziane-Brandao",
-    "last_opened_file_path": "C:/Users/LIVRE/RoteiroRefactoringJS"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;Python.1_confusion_matrix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_drop_nan.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.questao7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Suziane-Brandao&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LIVRE/IA---ADS-&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LIVRE\IA---ADS-\Pre-processing\dataset" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LIVRE\IA---ADS-\AV1\Relatório" />
+      <recent name="C:\Users\LIVRE\IA---ADS-\AV1\dataset" />
+      <recent name="C:\Users\LIVRE\IA---ADS-" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.4_drop_nan">
     <configuration name="4_drop_nan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IA---ADS-" />
       <option name="ENV_FILES" value="" />
@@ -99,12 +113,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="questao1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IA---ADS-" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AV1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AV1/questao1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.4_drop_nan" />
-        <item itemvalue="Python.4_drop_nan" />
-        <item itemvalue="Python.4_drop_nan" />
-        <item itemvalue="Python.4_drop_nan" />
+        <item itemvalue="Python.questao1" />
         <item itemvalue="Python.4_drop_nan" />
       </list>
     </recent_temporary>
@@ -119,90 +153,45 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d7cd17ba-9375-40d4-a6eb-e89fe9bbd3bb" name="Changes" comment="" />
-      <created>1730579001538</created>
+      <changelist id="c97e0f7c-9357-40e8-b426-a4bec0c67937" name="Changes" comment="" />
+      <created>1733665097143</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1730579001538</updated>
+      <updated>1733665097143</updated>
     </task>
-    <task id="LOCAL-00001" summary="Atividade 1 completa">
+    <task id="LOCAL-00001" summary="Prova AV1">
       <option name="closed" value="true" />
-      <created>1730579330961</created>
+      <created>1733709898925</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1730579330962</updated>
+      <updated>1733709898926</updated>
     </task>
-    <task id="LOCAL-00002" summary="Atividade 1 completa">
+    <task id="LOCAL-00002" summary="Prova AV1 - Atualizada">
       <option name="closed" value="true" />
-      <created>1730579446906</created>
+      <created>1733791729610</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1730579446906</updated>
+      <updated>1733791729610</updated>
     </task>
-    <task id="LOCAL-00003" summary="Atividade 1 (Completa)">
-      <option name="closed" value="true" />
-      <created>1730579740744</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1730579740744</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Atividade 1 (Corrigida)">
-      <option name="closed" value="true" />
-      <created>1730728448346</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1730728448346</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="main" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Atividade 1 completa" />
-    <MESSAGE value="Atividade 1 Completa" />
-    <MESSAGE value="Atividade 1 (Completa)" />
-    <MESSAGE value="Atividade 1 (Corrigida)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atividade 1 (Corrigida)" />
+    <MESSAGE value="Prova AV1" />
+    <MESSAGE value="Prova AV1 - Atualizada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prova AV1 - Atualizada" />
   </component>
 </project>
