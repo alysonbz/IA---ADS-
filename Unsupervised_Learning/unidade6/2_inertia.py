@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+from matplotlib.pyplot import xlabel
+from sklearn.cluster import KMeans
+
 from src.utils import load_grains_dataset
 from sklearn.cluster import KMeans
 
@@ -11,13 +14,14 @@ inertias = []
 
 for k in ks:
     # Create a KMeans instance with k clusters: model
-    ____
+    model = KMeans(n_clusters=k)
+
 
     # Fit model to samples
-    ____
+    model.fit(samples)
 
     # Append the inertia to the list of inertias
-    ____
+    inertias.append(model.inertia_)
 
 # Plot ks vs inertias
 plt.plot(ks, inertias, '-o')
