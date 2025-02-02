@@ -7,16 +7,16 @@ samples = samples_df.drop(['variety','variety_number'],axis=1)
 varieties = samples_df['variety'].values
 
 # Create a KMeans model with 3 clusters: model
-model = ____
+model = KMeans(n_clusters=3)
 
 # Use fit_predict to fit model and obtain cluster labels: labels
-labels = ____
+labels = model.fit_predict(samples)
 
 # Create a DataFrame with labels and varieties as columns: df
 df = pd.DataFrame({'labels': labels, 'varieties': varieties})
 
 # Create crosstab: ct
-ct = ____
+ct = pd.crosstab(df['labels'],df['varieties'])
 
 # Display ct
 print(ct)
