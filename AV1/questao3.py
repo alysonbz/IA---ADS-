@@ -25,7 +25,7 @@ X_train_norm = scaler.fit_transform(X_train)
 X_test_norm = scaler.transform(X_test)
 
 # Função para calcular a acurácia utilizando o KNN com métrica de Mahalanobis
-def knn_mahalanobis(X_train, X_test, y_train, y_test, n_neighbors=10):
+def knn_mahalanobis(X_train, X_test, y_train, y_test, n_neighbors=7):
     # Calculando a matriz de covariância e sua inversa
     cov_matrix = np.cov(X_train, rowvar=False)
     inv_cov_matrix = np.linalg.inv(cov_matrix)

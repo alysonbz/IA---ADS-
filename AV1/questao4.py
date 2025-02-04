@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
 # Carregar o dataset
@@ -13,11 +12,10 @@ X = WineQT.drop("quality", axis=1).values
 y = WineQT['quality'].values
 
 # Normalizar os dados (média zero e variância unitária)
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
+X_train_log = np.log1p(X)
 
 # Dividir os dados em conjuntos de treino e teste
-X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, stratify=y, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
 
 # Intervalo de vizinhos a ser testado
 neighbors_range = np.arange(1, 26)

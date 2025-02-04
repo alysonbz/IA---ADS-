@@ -19,6 +19,7 @@ X_norm = scaler.fit_transform(X)
 #obtenha as labels da coluna Quality
 y = wine["Quality"].values
 
+
 #print a valriância de X
 print('variancia', X.var())
 
