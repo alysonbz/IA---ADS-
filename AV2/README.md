@@ -1,6 +1,11 @@
 # AVALIAÇÃO 2 - Prazo para envio do relatório e código : 17/02/2025
 > Orientações para execução da prova.
 
+# Apresentações devem ser feitas no dia 17/02
+obs: somente se não houver mais tempo habil para apresentação nesse dia
+que serão permitas apresentações dia 18-02 sem prejuizo de pontuação.
+
+
 Esse documento exibe as descrições das questões e a relação dos datasets que devem ser utiizados 
 pelos alunos e alunas.
 
