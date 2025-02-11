@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 #PROVA
 def load_gender_classification():
-    return pd.read_csv('dataset/gender_classification_v7.csv')
+    return pd.read_csv('C:/Users/souza/PycharmProjects/IA---ADS-/AV1/dataset/gender_classification_v7.csv')
 
 def load_kc_house_data():
     return pd.read_csv('dataset/kc_house_data.csv')
