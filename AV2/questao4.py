@@ -1,12 +1,13 @@
 import pandas as pd
 from pandas import crosstab
 
-from src.utils import load_new_dataframe_gender_classification
+from src.utils import load_gender_classification
 from sklearn.cluster import KMeans
 
-gender_df = load_new_dataframe_gender_classification()
-samples = gender_df[['forehead_width_cm','forehead_height_cm']]
-#samples = gender_df[['nose_wide','distance_nose_to_lip_long']]
+gender_df = load_gender_classification()
+
+samples = gender_df[['nose_wide','distance_nose_to_lip_long']]
+
 gender = gender_df['gender'].values
 
 model = KMeans(n_clusters=2)

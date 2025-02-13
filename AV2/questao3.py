@@ -24,7 +24,8 @@ plt.xticks(rotation=45)
 plt.show()
 
 #GRAFICO DE COTOVELO E SILHUETA
-gender_gra = gender[['forehead_width_cm','forehead_height_cm']]
+#gender_gra = gender[['forehead_width_cm','forehead_height_cm']]
+gender_gra = gender[['nose_wide','distance_nose_to_lip_long']]
 
 inertias = []
 silhouette_scores = []
@@ -63,8 +64,10 @@ plt.show()
 df = load_gender_classification()
 
 # 2. Selecionar duas colunas numéricas para agrupar
-x_col = "forehead_height_cm"
-y_col = "forehead_width_cm"
+#x_col = "forehead_height_cm"
+x_col = 'nose_wide'
+#y_col = "forehead_width_cm"
+y_col = 'distance_nose_to_lip_long'
 data = df[[x_col, y_col]]
 
 # 3. Definir número de clusters (K)
