@@ -4,49 +4,38 @@ from sklearn.linear_model import LinearRegression
 
 
 class KFold:
+    def __init__(self, n_splits):
+        self.n_splits = n_splits
 
-   def __init__(self,n_splits):
+    def _compute_score(self, y_true, y_pred):
+        return np.sum(np.square(y_pred - np.mean(y_true))) / np.sum(np.square(y_true - np.mean(y_true)))
 
-       self.n_splits = n_splits
-
-   def _compute_score(self,X,y):
-       return None
-
-   def cross_val_score(self,obj,X, y):
+    def cross_val_score(self, model, X, y):
+        indices = np.random.permutation(len(y))
+        fold_size = len(y) // self.n_splits
 
         scores = []
+        for i in range(self.n_splits):
+            test_idx = indices[i * fold_size:(i + 1) * fold_size]
+            train_idx = np.setdiff1d(indices, test_idx)
 
-        # parte 1: dividir o dataset X em n_splits vezes
+            X_train, X_test = X[train_idx], X[test_idx]
+            y_train, y_test = y[train_idx], y[test_idx]
 
-        # parte 2: Calcular a métrica score para subset dividida na parte 1. Chamar a função _compute_score para cada subset
-
-        #appendar na lista scores cada valor obtido na parte 2
-
-        #parte 3 - retornar a lista de scores
+            model.fit(X_train, y_train)
+            scores.append(self._compute_score(y_test, model.predict(X_test)))
 
         return scores
 
 
-sales_df = load_sales_clean_dataset()
+# Carregar dados
+df = load_sales_clean_dataset()
+X, y = df["tv"].values.reshape(-1, 1), df["sales"].values
 
-# Create X and y arrays
-X = sales_df["tv"].values.reshape(-1, 1)
-y = sales_df["sales"].values
+# Criar e executar validação cruzada
+cv_scores = KFold(n_splits=6).cross_val_score(LinearRegression(), X, y)
 
-# Create a KFold object
-kf = KFold(n_splits=6)
-
-reg = LinearRegression()
-
-# Compute 6-fold cross-validation scores
-cv_scores = kf.cross_val_score(reg,X, y)
-
-# Print scores
+# Exibir resultados
 print(cv_scores)
-
-# Print the mean
-print(np.mean(cv_scores))
-
-# Print the standard deviation
-print(np.std(cv_scores))
-
+print(f"Média: {np.mean(cv_scores):.4f}")
+print(f"Desvio Padrão: {np.std(cv_scores):.4f}")

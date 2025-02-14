@@ -10,18 +10,18 @@ variety_numbers = samples_df['variety_number'].values
 
 
 # Create a TSNE instance: model
-model = __
+model = TSNE(learning_rate=200)
 
 # Apply fit_transform to samples: tsne_features
-tsne_features =__
+tsne_features = model.fit_transform(samples)
 
 # Select the 0th feature: xs
-xs = __
+xs = tsne_features[:,0]
 
 # Select the 1st feature: ys
-ys =__
+ys = tsne_features[:,1]
 
 # Scatter plot, coloring by variety_numbers
-___
+plt.scatter(xs, ys, c='blue')
 
 plt.show()
