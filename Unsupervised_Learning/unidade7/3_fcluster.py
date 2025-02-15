@@ -9,19 +9,19 @@ movements_df = load_movements_price_dataset()
 movements = movements_df.drop(['company'],axis=1)
 companies = movements_df['company'].values
 
-normalized_movements = ____
+normalized_movements = normalize(movements)
 
 # Calculate the linkage: mergings
-mergings =___
+mergings = linkage(normalized_movements, method='complete')
 
 # Use fcluster to extract labels: labels
-labels = ___
+labels = fcluster(mergings, 6, criterion='distance')
 
-# Create a DataFrame with labels and varieties as columns: df
-df = __
+# Create a DataFrame with labels and companies as columns: df
+df = pd.DataFrame({'labels': labels, 'companies': companies})
 
 # Create crosstab: ct
-ct = __
+ct = pd.crosstab(df['labels'], df['companies'])
 
 # Display ct
 print(ct)
