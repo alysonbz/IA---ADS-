@@ -1,5 +1,5 @@
 from sklearn.model_selection import train_test_split
-from AV1.src.utils import load_water_quality
+from Avaliações.AV1.src.utils import load_water_quality
 import numpy as np
 import math
 

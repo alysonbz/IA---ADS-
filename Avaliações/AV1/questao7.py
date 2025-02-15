@@ -1,4 +1,4 @@
-from AV1.src.utils import load_car_price_prediction
+from Avaliações.AV1.src.utils import load_car_price_prediction
 from sklearn.linear_model import LinearRegression
 import numpy as np
 

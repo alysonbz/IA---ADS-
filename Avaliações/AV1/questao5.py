@@ -1,7 +1,7 @@
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-from AV1.src.utils import load_car_price_prediction, load_car_price_prediction_old
+from Avaliações.AV1.src.utils import load_car_price_prediction, load_car_price_prediction_old
 
 carPrice = load_car_price_prediction()
 oldCarPrice = load_car_price_prediction_old()

@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import pandas as pd
 from src.utils import load_grains_dataset
 from sklearn.cluster import KMeans
 

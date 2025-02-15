@@ -1,5 +1,5 @@
 from sklearn.model_selection import train_test_split
-from AV1.src.utils import load_car_price_prediction
+from Avaliações.AV1.src.utils import load_car_price_prediction
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt

@@ -1,4 +1,4 @@
-from AV1.src.utils import load_water_quality_old, load_water_quality
+from Avaliações.AV1.src.utils import load_water_quality_old, load_water_quality
 
 waterQuality = load_water_quality_old()
 newWaterQuality = load_water_quality()
