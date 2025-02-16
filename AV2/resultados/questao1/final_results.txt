@@ -1,0 +1,16 @@
+===== FINAL REPORT =====
+Melhores parâmetros (GridSearchCV): {'metric': 'euclidean', 'n_neighbors': 7}
+Acurácia (validação cruzada): 96.73%
+
+Acurácia (teste): 96.75%
+
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.97      0.97      0.97     11860
+           1       0.97      1.00      0.98      4343
+           2       0.95      0.91      0.93      3797
+
+    accuracy                           0.97     20000
+   macro avg       0.97      0.96      0.96     20000
+weighted avg       0.97      0.97      0.97     20000
