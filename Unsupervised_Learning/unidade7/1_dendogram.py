@@ -9,7 +9,6 @@ from ___ y import __, __
 
 X_train, samples, y_train, varieties = load_grains_splited_datadet()
 
-
 # Calculate the linkage: mergings
 mergings = ____
 
