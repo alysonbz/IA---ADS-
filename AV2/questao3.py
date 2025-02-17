@@ -50,7 +50,7 @@ plt.show()
 
 # Método-da-Silhueta
 silhouette_scores = []
-for k in range(2, 11):  # Para o método da silhueta, o número de clusters deve ser ao menos 2
+for k in range(2, 11):
     kmeans = KMeans(n_clusters=k, random_state=42)
     kmeans.fit(X_selected)
     score = silhouette_score(X_selected, kmeans.labels_)
