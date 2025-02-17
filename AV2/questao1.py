@@ -136,7 +136,7 @@ def plot_individual_metrics(metric_scores, folder):
             plt.legend()
             plt.tight_layout()
             plt.savefig(f"{folder}/{metric}_plot.png")
-            plt.close()  # Evita sobreposição em plots futuros
+            plt.close()
 
 
 def plot_grid_search_results(grid_search, folder):
@@ -156,13 +156,13 @@ def plot_grid_search_results(grid_search, folder):
         if metric_used in metric_scores:
             metric_scores[metric_used].append((param['n_neighbors'], mean_scores[i]))
 
-    # 1) Salvar tabelas CSV de cada métrica
+    # Salvar tabelas CSV de cada métrica
     save_metric_tables(metric_scores, folder)
 
-    # 2) Plotar gráficos individuais por métrica
+    # Plotar gráficos individuais por métrica
     plot_individual_metrics(metric_scores, folder)
 
-    # 3) Plot combinado
+    # Plot combinado
     plt.figure(figsize=(12, 7))
     markers = {'euclidean': 'o', 'manhattan': 's', 'chebyshev': '^', 'mahalanobis': 'D'}
 
