@@ -65,23 +65,34 @@ x_col = 'aluminium'
 y_col = 'chloramine'
 data = df[[x_col, y_col]]
 
-k = 5
+k = 3
 
 kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)
 df["cluster"] = kmeans.fit_predict(data)
 
-plt.figure(figsize=(8, 6))
-sns.scatterplot(x=df[x_col],
-                y=df[y_col],
-                hue=df["cluster"],
-                palette="viridis",
-                style=df["cluster"],
-                alpha=0.7)
-centroids = kmeans.cluster_centers_
-plt.scatter(centroids[:, 0], centroids[:, 1], c='red', marker='X', s=200, label="Centroides")
+fig, axes = plt.subplots(1, 2, figsize=(14, 6))
 
-plt.title(f"K-Means Clustering (K={k})")
-plt.xlabel(x_col)
-plt.ylabel(y_col)
-plt.legend(title="Cluster")
+sns.scatterplot(ax=axes[0], x=df[x_col], y=df[y_col], hue=df["cluster"],
+                palette="viridis", style=df["cluster"], alpha=0.7)
+centroids = kmeans.cluster_centers_
+axes[0].scatter(centroids[:, 0], centroids[:, 1], c='red', marker='X', s=200, label="Centroides")
+axes[0].set_title(f"K-Means Clustering (K={k})")
+axes[0].set_xlabel(x_col)
+axes[0].set_ylabel(y_col)
+axes[0].legend(title="Cluster")
+
+k = 5
+
+kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)
+df["cluster"] = kmeans.fit_predict(data)
+sns.scatterplot(ax=axes[1], x=df[x_col], y=df[y_col], hue=df["cluster"],
+                palette="coolwarm", style=df["cluster"], alpha=0.7)
+centroids = kmeans.cluster_centers_
+axes[1].scatter(centroids[:, 0], centroids[:, 1], c='black', marker='X', s=200, label="Centroides")
+axes[1].set_title(f"K-Means Clustering (K={k})")
+axes[1].set_xlabel(x_col)
+axes[1].set_ylabel(y_col)
+axes[1].legend(title="Cluster")
+
+plt.tight_layout()
 plt.show()

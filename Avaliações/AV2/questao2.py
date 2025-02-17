@@ -28,7 +28,7 @@ axes[0].set_ylabel('Inertia')
 axes[0].grid()
 
 axes[1].plot(range(2, 11), silhouette, marker='o')
-axes[1].set_title('Índice de Silhueta para Diferentes Valores de K')
+axes[1].set_title('Índice de Silhueta')
 axes[1].set_xlabel('Número de Clusters (K)')
 axes[1].set_ylabel('Silhouette Score')
 axes[1].grid()
