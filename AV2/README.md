@@ -104,7 +104,7 @@ do resultado. Verifique se o resultado obtido na AV1 é o mesmo que você obteve
 
 ```questao2.py```
 Sem considerar a coluna alvo do seu dataset, faça uma análise para descobrir a quantidade ideal de clusters que deve ser 
-feita. Considerem usar o o metodo do cotovelo e da silhueta. 
+feita. Considerem usar o metodo do cotovelo e da silhueta. 
 
 ### Questão 3
 
