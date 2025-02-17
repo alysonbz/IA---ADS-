@@ -6,7 +6,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 
 # Carregar os dados
-df = pd.read_csv('wineqt_ajustado.csv')
+df = pd.read_csv('dataset/wineqt_ajustado.csv')
 
 # Separar as variáveis independentes (features) e a variável dependente (target)
 X = df.drop(columns=['quality'])
@@ -67,8 +67,8 @@ plt.show()
 # ------------------------------------------------------------
 
 # Número de clusters (baseado nos resultados do método)
-k_cotovelo = 4  # Exemplo, substitua pelo valor do cotovelo
-k_silhueta = 3  # Exemplo, substitua pelo valor da silhueta
+k_cotovelo = 4
+k_silhueta = 3
 
 # Ajustando o modelo KMeans com os valores de k
 kmeans_cotovelo = KMeans(n_clusters=k_cotovelo, random_state=42)

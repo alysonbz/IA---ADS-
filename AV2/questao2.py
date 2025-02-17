@@ -5,7 +5,7 @@ from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import StandardScaler
 
 # Carregar os dados e remover a coluna alvo
-df = pd.read_csv('wineqt_ajustado.csv')
+df = pd.read_csv('dataset/wineqt_ajustado.csv')
 X = df.drop(columns=['quality'])
 
 # Normalização dos dados

@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.metrics import silhouette_score
 
 # Carregar os dados
-df = pd.read_csv('wineqt_ajustado.csv')
+df = pd.read_csv('dataset/wineqt_ajustado.csv')
 
 # Separar as variáveis independentes (features) e a variável dependente (target)
 X = df.drop(columns=['quality'])
@@ -19,8 +19,8 @@ X_scaled = scaler.fit_transform(X)
 top_2_features = ['alcohol', 'volatile acidity']  # Substitua pelos atributos selecionados
 X_selected = X[top_2_features]
 
-# Ajustando o KMeans com o valor de k obtido pelo índice de silhueta (exemplo k=4)
-k_silhueta = 3  # Substitua pelo valor real de k do método da silhueta
+# Ajustando o KMeans com o valor de k obtido pelo índice de silhueta
+k_silhueta = 3
 kmeans = KMeans(n_clusters=k_silhueta, random_state=42)
 
 # Previsões dos clusters
