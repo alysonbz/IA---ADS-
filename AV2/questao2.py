@@ -14,14 +14,14 @@ X_scaled = scaler.fit_transform(X)
 
 # 1. Método do Cotovelo
 inertia = []
-for k in range(1, 11):  # Testando de 1 a 10 clusters
+for k in range(2, 11):  # Testando de 2 a 10 clusters
     kmeans = KMeans(n_clusters=k, random_state=42)
     kmeans.fit(X_scaled)
     inertia.append(kmeans.inertia_)
 
 # Plotando o gráfico do Cotovelo
 plt.figure(figsize=(8, 6))
-plt.plot(range(1, 11), inertia, marker='o')
+plt.plot(range(2, 11), inertia, marker='o')
 plt.title('Método do Cotovelo')
 plt.xlabel('Número de Clusters (K)')
 plt.ylabel('Inércia')
