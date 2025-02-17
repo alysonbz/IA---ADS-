@@ -71,7 +71,7 @@ def avaliar_knn(teste, treinamento, K, distancia_func, matriz_cov=None):
 matriz_cov = np.cov(X_train.T)
 
 # Avaliar para diferentes distâncias
-K = 10
+K = 7
 print("Porcentagem de acertos distância euclidiana:",
       avaliar_knn(teste, treinamento, K, dist_euclidiana))
 print("Porcentagem de acertos distância manhattan:",

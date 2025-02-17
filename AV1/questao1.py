@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Carregar o dataset
+# Carregar o dataset original
 WineQT = pd.read_csv('./dataset/WineQT.csv')
 
 # Verificar valores ausentes
@@ -16,13 +16,11 @@ relevantes = correlacoes[correlacoes.abs() > 0.2]
 colunas_relevantes = ["quality"] + list(relevantes.index[1:])  # Inclui 'quality'
 new_wineqt = WineQT[colunas_relevantes]
 
-# Exibir o DataFrame final
-print("\nDataFrame Final:")
-print(new_wineqt.head())
-
 # Mostrar a distribuição de classes
 print("\nDistribuição de Classes:")
 print(new_wineqt["quality"].value_counts())
 
-new_wineqt.to_csv('./dataset/wineqt_ajustado.csv', index=False)
+# Salvar os dados ajustados
+file_path = './dataset/wineqt_ajustado.csv'
+new_wineqt.to_csv(file_path, index=False)
 print("As alterações foram salvas no arquivo 'wineqt_ajustado.csv'.")
