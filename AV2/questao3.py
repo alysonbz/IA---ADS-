@@ -15,7 +15,6 @@ X = df.sample(n=30000, random_state=42)
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-# Metodo Cotovelo
 lasso = LassoCV(cv=5, random_state=42).fit(X_scaled, np.random.rand(X_scaled.shape[0]))
 important_features = np.argsort(np.abs(lasso.coef_))[-2:]
 X_selected = X.iloc[:, important_features]

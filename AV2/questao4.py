@@ -7,13 +7,8 @@ from AV2.dataset.BD import load_creditcard
 
 df = load_creditcard()
 
-# Armazena a coluna alvo antes de remover
 y = df['Class']
-
-# Remover a coluna alvo
 df = df.drop(columns=['Class'])
-
-# Amostragem aleatória das demais colunas
 X = df.sample(n=30000, random_state=42)
 
 # Normalização dos dados
@@ -24,7 +19,6 @@ X_scaled = scaler.fit_transform(X)
 lasso = LassoCV(cv=5, random_state=42).fit(X_scaled, np.random.rand(X_scaled.shape[0]))
 important_features = np.argsort(np.abs(lasso.coef_))[-2:]
 X_selected = X.iloc[:, important_features]
-
 # Re-normalização dos atributos selecionados
 X_selected_scaled = scaler.fit_transform(X_selected)
 
