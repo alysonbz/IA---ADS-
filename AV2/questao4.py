@@ -20,7 +20,7 @@ top_2_features = ['alcohol', 'volatile acidity']  # Substitua pelos atributos se
 X_selected = X[top_2_features]
 
 # Ajustando o KMeans com o valor de k obtido pelo índice de silhueta
-k_silhueta = 3
+k_silhueta = 2
 kmeans = KMeans(n_clusters=k_silhueta, random_state=42)
 
 # Previsões dos clusters

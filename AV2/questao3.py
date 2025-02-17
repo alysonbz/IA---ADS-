@@ -33,14 +33,14 @@ print(f"Dois atributos mais relevantes selecionados: {top_2_features}")
 
 # Aplicar o método do cotovelo para encontrar o número ideal de clusters
 inertia = []
-for k in range(1, 11):
+for k in range(2, 11):
     kmeans = KMeans(n_clusters=k, random_state=42)
     kmeans.fit(X_selected)
     inertia.append(kmeans.inertia_)
 
 # Plotar o gráfico de cotovelo
 plt.figure(figsize=(8, 6))
-plt.plot(range(1, 11), inertia, marker='o')
+plt.plot(range(2, 11), inertia, marker='o')
 plt.title('Método do Cotovelo')
 plt.xlabel('Número de Clusters')
 plt.ylabel('Inércia')
@@ -67,8 +67,8 @@ plt.show()
 # ------------------------------------------------------------
 
 # Número de clusters (baseado nos resultados do método)
-k_cotovelo = 4
-k_silhueta = 3
+k_cotovelo = 3
+k_silhueta = 2
 
 # Ajustando o modelo KMeans com os valores de k
 kmeans_cotovelo = KMeans(n_clusters=k_cotovelo, random_state=42)
