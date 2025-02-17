@@ -1,21 +1,26 @@
 import matplotlib.pyplot as plt
 from src.utils import load_grains_splited_datadet
-import scipy.cluster.hierarchy as sch
 from scipy.cluster.hierarchy import dendrogram, linkage
 
-# Load the dataset
-X_train, samples, y_train, varieties = load_grains_splited_datadet()
+# Carregar dados corretamente
+X_train, X_test, y_train, y_test = load_grains_splited_datadet()
+X_dendro = X_train
+varieties = y_train
 
-# Calculate the linkage: mergings
-mergings = linkage(X_train, method='complete')
+print(f"Number of observations in X_dendro: {len(X_dendro)}")
+print(f"Number of labels in varieties: {len(varieties)}")
 
-if len(varieties) != len(X_train):
-    raise ValueError("The number of labels must match the number of observations in the dataset.")
+if len(varieties) != len(X_dendro):
+    raise ValueError("The number of labels must match the number of observations no dendrogram.")
 
+# Calcular linkage
+mergings = linkage(X_dendro, method='complete')
 
-# Plot the dendrogram, using varieties as labels
-dendrogram(mergings,
-           labels=varieties,
-           leaf_rotation=90,
-           leaf_font_size=10)
+# Plotar o dendrograma
+dendrogram(
+    mergings,
+    labels=varieties,
+    leaf_rotation=90,
+    leaf_font_size=10
+)
 plt.show()
